@@ -57,9 +57,9 @@
 
                 <div class="header-bottom header-sticky" >
                     <!-- Logo -->
-                    {{-- <div class="logo d-none d-lg-block">
-                        <a href="home"><img src="assets/img/logo/logo.png" alt=""></a>
-                    </div> --}}
+                    <div class="logo d-none d-lg-block">
+                        <a href="home"><img src="assets/img/logo/logos.png" alt="" style="height: 30px; width: 60px;"></a>
+                    </div>
                     <div class="container-fluid" style="background-color: black">
                         <div class="menu-wrapper">
                             <!-- Logo -->
@@ -96,6 +96,7 @@
                                                 <li><a href="faire">Faire Gérer</a></li>
                                             </ul>
                                         </li>
+                                        <li><a href="agenda">Organisation</a></li>
                                         <li><a href="agenda">Agenda</a></li>
                                         <li><a href="partenaire">Partenaires</a></li>
                                         <li><a href="contact">Contact</a></li>
