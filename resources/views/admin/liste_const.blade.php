@@ -12,42 +12,140 @@
   <!-- Content Row -->
   <div class="row">
 
- 
 
-    <!-- Earnings (Monthly) Card Example -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card border-left-dark shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-dark mb-1"> <h4>Construction</h4> </div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">Adidogome</div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">215,000 XOF</div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas fa-home fa-2x text-gray-300"></i>
-                        {{-- <img src="{{asset('assets/img/comment/comment_1.png')}}" alt=""> --}}
-                    </div>
-                    <div class="col-md-12">
-                        <a href="#" class="col-auto btn btn-primary  btn-circle btn-sm">
-                            <i class="fas fa-edit"></i>
-                        </a>
-
-                        <a href="#" class="col-auto btn btn-info  btn-circle btn-sm">
-                            <i class="fas fa-eye"></i>
-                        </a>
-
-                        <a href="#" class="col-auto btn btn-danger btn-circle btn-sm">
-                            <i class="fas fa-trash"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <div class="col-auto" style="padding-top: 15px;">
+      <div class="card" style="width: 15rem;" style="padding-top: 15px;">
+          <img class="card-img-top" src="assets/img/comment/construction.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Coaching</h5>
+            {{-- <p class="card-text">Some quick exampl content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a> --}}
+            <div class="col-md-12">
+              <a href="#" class="col-auto btn btn-primary  btn-circle btn-sm">
+                  <i class="fas fa-edit"></i>
+              </a>
+  
+              <a href="#" class="col-auto btn btn-info  btn-circle btn-sm">
+                  <i class="fas fa-eye"></i>
+              </a>
+  
+              <a href="#" class="col-auto btn btn-danger btn-circle btn-sm">
+                  <i class="fas fa-trash"></i>
+              </a>
+          </div>
+          </div>
         </div>
     </div>
 
+
+
+    <div class="col-auto" style="padding-top: 15px;">
+      <div class="card" style="width: 15rem;"  >
+          <img class="card-img-top" src="assets/img/comment/construction.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Coaching</h5>
+            {{-- <p class="card-text">Some quick exampl content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a> --}}
+            <div class="col-md-12">
+              <a href="#" class="col-auto btn btn-primary  btn-circle btn-sm">
+                  <i class="fas fa-edit"></i>
+              </a>
+  
+              <a href="#" class="col-auto btn btn-info  btn-circle btn-sm">
+                  <i class="fas fa-eye"></i>
+              </a>
+  
+              <a href="#" class="col-auto btn btn-danger btn-circle btn-sm">
+                  <i class="fas fa-trash"></i>
+              </a>
+          </div>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="col-auto" style="padding-top: 15px;">
+      <div class="card" style="width: 15rem;"  >
+          <img class="card-img-top" src="assets/img/comment/construction.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Coaching</h5>
+            {{-- <p class="card-text">Some quick exampl content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a> --}}
+            <div class="col-md-12">
+              <a href="#" class="col-auto btn btn-primary  btn-circle btn-sm">
+                  <i class="fas fa-edit"></i>
+              </a>
+  
+              <a href="#" class="col-auto btn btn-info  btn-circle btn-sm">
+                  <i class="fas fa-eye"></i>
+              </a>
+  
+              <a href="#" class="col-auto btn btn-danger btn-circle btn-sm">
+                  <i class="fas fa-trash"></i>
+              </a>
+          </div>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="col-auto" style="padding-top: 15px;">
+      <div class="card" style="width: 15rem;"  >
+          <img class="card-img-top" src="assets/img/comment/construction.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Coaching</h5>
+            {{-- <p class="card-text">Some quick exampl content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a> --}}
+            <div class="col-md-12">
+              <a href="#" class="col-auto btn btn-primary  btn-circle btn-sm">
+                  <i class="fas fa-edit"></i>
+              </a>
+  
+              <a href="#" class="col-auto btn btn-info  btn-circle btn-sm">
+                  <i class="fas fa-eye"></i>
+              </a>
+  
+              <a href="#" class="col-auto btn btn-danger btn-circle btn-sm">
+                  <i class="fas fa-trash"></i>
+              </a>
+          </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="col-auto" style="padding-top: 15px;">
+      <div class="card" style="width: 15rem;"  >
+          <img class="card-img-top" src="assets/img/comment/construction.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Coaching</h5>
+            {{-- <p class="card-text">Some quick exampl content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a> --}}
+            <div class="col-md-12">
+              <a href="#" class="col-auto btn btn-primary  btn-circle btn-sm">
+                  <i class="fas fa-edit"></i>
+              </a>
+  
+              <a href="#" class="col-auto btn btn-info  btn-circle btn-sm">
+                  <i class="fas fa-eye"></i>
+              </a>
+  
+              <a href="#" class="col-auto btn btn-danger btn-circle btn-sm">
+                  <i class="fas fa-trash"></i>
+              </a>
+          </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
     
-  </div>
+  </div> 
+
 
  
 @endsection

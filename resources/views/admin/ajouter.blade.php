@@ -42,26 +42,55 @@
 
 
                     <div class="col-md-6">
-                        <label class="text-primary h5">Informations Générales </label>
+                        <label class="text-primary h5">Type de l'élément</label>
                         <div class="row">
                             <div class="form-group col-md-12" id="colprix">
-                                <select name="paiement" class="form-control" required id="paiement" required>
+                                <select name="type" class="form-control" required>
                                     <option> Choisir un type *</option>
-                                    <option value="Par mois">Formation </option>
-                                    <option value="Par mois">En vente </option>
-                                    <option value="Par AN">En Location</option>
-                                    <option value="Par Semaines">En Construction</option>
+                                    <option value="1">En vente </option>
+                                    <option value="2">En Location</option>
+                                    <option value="3">En Construction</option>
                                 </select>
                             </div>
                             
                         </div>
                     </div>
 
+
+
+
+                    <div class="col-md-6">
+                        <label class="text-primary h5">Prix</label>
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <input type="number" id="" class="form-control" name="prix" required
+                                    value="" placeholder="Prix de l'element">
+                                @if( $errors->has('nom'))
+                                <p class="text-danger">{{ $errors->first('nom') }}</p>
+                                @endif
+                            </div>
+                        </div>
+                     </div>
+
+                     <div class="col-md-6">
+                        <label class="text-primary h5">Quartier</label>
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <input type="text" id="" class="form-control" name="prix" required
+                                    value="" placeholder="Quartier de l'element">
+                                @if( $errors->has('nom'))
+                                <p class="text-danger">{{ $errors->first('nom') }}</p>
+                                @endif
+                            </div>
+                        </div>
+                     </div>
+
+
                     <div class="col-md-12">
                         <label class="text-primary h5">Description de l'élément</label>
                         <div class="row">
                             <div class="form-group col-md-12">
-                                <textarea name="description" id="" rows="3" class="form-control"></textarea>
+                                <textarea name="description" id="" rows="2" class="form-control" placeholder="Description de l'élément" required></textarea>
                                 @if( $errors->has('nom'))
                                 <p class="text-danger">{{ $errors->first('nom') }}</p>
                                 @endif

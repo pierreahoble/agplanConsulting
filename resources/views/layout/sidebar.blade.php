@@ -37,9 +37,10 @@
     <div class="bg-white py-2 collapse-inner rounded">
       <h6 class="collapse-header">Action:</h6>
       <a class="collapse-item" href="ajouter_un_element">Ajouter un élément</a>
+      <a class="collapse-item" href="ajouter_formation">Ajouter une formation</a>
       <a class="collapse-item" href="liste_des_formation">Liste Formation</a>
       <a class="collapse-item" href="liste_des_vente">Liste Vente</a>
-      <a class="collapse-item" href="liste_des_construction">Liste Location</a>
+      <a class="collapse-item" href="liste_des_construction">Liste Construction</a>
       <a class="collapse-item" href="liste_des_location">Liste Location</a>
     </div>
   </div>

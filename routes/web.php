@@ -23,6 +23,14 @@ Route::get('liste_des_formation',function(){
 });
 
 
+//Vue formation
+Route::get('ajouter_formation',function(){
+    return view('admin.add_artcle');
+});
+
+//Ajouter une formation
+Route::post('ajouter_formation','adminController@addFormation');
+
 Route::get('liste_des_vente',function(){
     return view('admin.liste_vente');
 });

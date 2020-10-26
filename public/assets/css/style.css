@@ -2928,6 +2928,15 @@ hr {
     background-size: cover
 }
 
+.slider-height2construction {
+    /* background-color: #1696e7; */
+    background-image: url(../img/comment/cons.jpg);
+    min-height: 455px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
 .slider-height2part {
     /* background-color: #1696e7; */
     background-image: url(../img/hero/hero7.png);
