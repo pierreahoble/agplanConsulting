@@ -46,7 +46,8 @@
                         <div class="row">
                             <div class="form-group col-md-12" id="colprix">
                                 <select name="paiement" class="form-control" required id="paiement" required>
-                                    <option value="null"> Choisir un type *</option>
+                                    <option> Choisir un type *</option>
+                                    <option value="Par mois">Formation </option>
                                     <option value="Par mois">En vente </option>
                                     <option value="Par AN">En Location</option>
                                     <option value="Par Semaines">En Construction</option>

@@ -43,7 +43,7 @@
                                 </div>
                                 <div class="header-info-right">
                                     <ul>    
-                                        <li><a href="#" class="btn"><i class="ti-user"></i>Connexion</a></li>
+                                        <li><a href="login" class="btn"><i class="ti-user"></i>Connexion</a></li>
                                         <li><a href="#" class="btn"><i class="ti-lock"></i>S'enregistrer</a></li>
                                     </ul>
                                 </div>

@@ -13,7 +13,7 @@
 /**Administration ***/
 
 Route::get('/', function () {
-    return view('admin.add_artcle');
+    return view('admin.home');
 });
 
 
@@ -41,6 +41,12 @@ Route::get('liste_des_location',function(){
 Route::get('ajouter_un_element',function(){
     return view('admin.ajouter');
 });
+
+Route::get('login',function(){
+    return view('admin.login');
+});
+
+
 
 
 
