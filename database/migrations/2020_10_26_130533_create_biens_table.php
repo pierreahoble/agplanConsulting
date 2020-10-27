@@ -20,6 +20,7 @@ class CreateBiensTable extends Migration
             $table->string('prix')->nullable()->default('10000');
             $table->string('quartier')->nullable()->default('quartier');
             $table->text('description')->nullable();
+            $table->string('image');
             $table->timestamps();
         });
     }

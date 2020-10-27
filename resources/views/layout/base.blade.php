@@ -37,6 +37,7 @@
 
 
 
+       @include('layout.message')
 
         <!-- Begin Page Content -->
         <div class="container-fluid">

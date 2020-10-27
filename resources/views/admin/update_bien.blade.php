@@ -22,17 +22,19 @@
     </div>
     <div class="card-body">
         <div class="col-md-12">
-            <form action="{{url('ajouter_un_element')}}" method="post" class="form-group"
+            <form action="{{url('modifier_bien')}}" method="post" class="form-group"
                 enctype="multipart/form-data">
                 @csrf
                 <div class="row">
+
+                    <input type="hidden" name="id" value="{{$bien->id}}">
 
                     <div class="col-md-6">
                         <label class="text-primary h5">Nom de l'élément</label>
                         <div class="row">
                             <div class="form-group col-md-12">
                                 <input type="text" id="" class="form-control" name="nom" required
-                                    value="" placeholder="Nom de l'element">
+                            value="{{$bien->nom}}" placeholder="Nom de l'element">
                                 @if( $errors->has('nom'))
                                 <p class="text-danger">{{ $errors->first('nom') }}</p>
                                 @endif
@@ -64,7 +66,7 @@
                         <div class="row">
                             <div class="form-group col-md-12">
                                 <input type="number" id="" class="form-control" name="prix" required
-                                    value="" placeholder="Prix de l'element">
+                                    value="{{$bien->prix}}" placeholder="Prix de l'element">
                                 @if( $errors->has('nom'))
                                 <p class="text-danger">{{ $errors->first('nom') }}</p>
                                 @endif
@@ -76,8 +78,8 @@
                         <label class="text-primary h5">Quartier</label>
                         <div class="row">
                             <div class="form-group col-md-12">
-                                <input type="text" id="" class="form-control" name="quartier" required
-                                    placeholder="Quartier de l'element">
+                                <input type="text" class="form-control" name="quartier" required
+                                        value="{{$bien->quartier}}"       placeholder="Quartier de l'element">
                                 @if( $errors->has('nom'))
                                 <p class="text-danger">{{ $errors->first('nom') }}</p>
                                 @endif
@@ -90,7 +92,7 @@
                         <label class="text-primary h5">Description de l'élément</label>
                         <div class="row">
                             <div class="form-group col-md-12">
-                                <textarea name="description" id="" rows="2" class="form-control" placeholder="Description de l'élément" required></textarea>
+                                <textarea name="description" id="" rows="2" class="form-control" placeholder="Description de l'élément" required>{{$bien->description}}</textarea>
                                 @if( $errors->has('nom'))
                                 <p class="text-danger">{{ $errors->first('nom') }}</p>
                                 @endif
@@ -99,7 +101,7 @@
                      </div>
 
 
-                    <div class="form-group col-md-12">
+                    {{-- <div class="form-group col-md-12">
                         <label for="" class="text-primary h5">Photos </label>
                     </div>
 
@@ -111,13 +113,13 @@
                     </div>
 
                     <div class="form-group col-md-12" id="prev" style="text-align: center">
-                    </div>
+                    </div> --}}
 
 
 
 
                     <div class="col-md-12">
-                        <button type="submit" class="btn btn-primary btn-block">Envoyer</button>
+                        <button type="submit" class="btn btn-primary btn-block">Modifier</button>
                     </div>
                 </div>
             </form>
