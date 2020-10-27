@@ -51,138 +51,38 @@
                             <!--  one -->
                             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">       
                                 <div class="row">
-                                    <div class="col-xl-4 col-lg-4 col-md-6">
-                                        <!-- Single course -->
-                                        <div class="single-course mb-70">
-                                            <div class="course-img">
-                                                <img src="assets/img/comment/vendre.jpg" alt="">
-                                            </div>
-                                            <div class="course-caption">
-                                                <div class="course-cap-top">
-                                                    <h4><a href="#">Immeuble II Fevrier</a></h4>
-                                                </div>
-                                                <div class="course-cap-mid d-flex justify-content-between">
-                                                    <div class="course-ratting">
-                                                        <a href="#" class="genric-btn primary circle">En savoir plus</a>
+                                    
+                                    @if (count($biens)>0)
+                                         @foreach ($biens as $bien)
+                                    
+                                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                                                            <!-- Single course -->
+                                                <div class="single-course mb-70">
+                                                    <div class="course-img">
+                                                      <img src="{{$bien->image}}" alt="">
                                                     </div>
-                                                    <ul class="text-danger">Prix : 52.000 F CFA</ul>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-6">
-                                        <!-- Single course -->
-                                        <div class="single-course mb-70">
-                                            <div class="course-img">
-                                                <img src="assets/img/comment/vendre.jpg" alt="">
-                                            </div>
-                                            <div class="course-caption">
-                                                <div class="course-cap-top">
-                                                    <h4><a href="#">House AGPlan</a></h4>
-                                                </div>
-                                                <div class="course-cap-mid d-flex justify-content-between">
-                                                    <div class="course-ratting">
-                                                        <a href="#" class="genric-btn primary circle">En savoir plus</a>
+                                                    <div class="course-caption">
+                                                        <div class="course-cap-top">
+                                                            <h4><a href="#">{{$bien->nom}}</a></h4>
+                                                        </div>
+                                                        <div class="course-cap-mid d-flex justify-content-between">
+                                                            <div class="course-ratting">
+                                                                <a href="#" class="genric-btn primary circle">En savoir plus</a>
+                                                        </div>
+                                                            <ul class="text-danger">Prix :{{$bien->prix}}FCFA</ul>
                                                     </div>
-                                                    <ul class="text-danger">Prix : 52.000 F CFA</ul>
+                                                                                    
                                                 </div>
-                                                
                                             </div>
-                                        </div>
                                     </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-6">
-                                        <!-- Single course -->
-                                        <div class="single-course mb-70">
-                                            <div class="course-img">
-                                                <img src="assets/img/comment/vendre.jpg" alt="">
-                                            </div>
-                                            <div class="course-caption">
-                                                <div class="course-cap-top">
-                                                    <h4><a href="#">House Marketing</a></h4>
-                                                </div>
-                                                <div class="course-cap-mid d-flex justify-content-between">
-                                                    <div class="course-ratting">
-                                                        <a href="#" class="genric-btn primary circle">En savoir plus</a>
-                                                    </div>
-                                                    <ul class="text-danger">Prix : 52.000 F CFA</ul>
-                                                </div>
-                                               
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-6">
-                                        <!-- Single course -->
-                                        <div class="single-course mb-70">
-                                            <div class="course-img">
-                                                <img src="assets/img/comment/vendre.jpg" alt="">
-                                            </div>
-                                            <div class="course-caption">
-                                                <div class="course-cap-top">
-                                                    <h4><a href="#">Quartier Design</a></h4>
-                                                </div>
-                                                <div class="course-cap-mid d-flex justify-content-between">
-                                                    <div class="course-ratting">
-                                                        <a href="#" class="genric-btn primary circle">En savoir plus</a>
-                                                    </div>
-                                                    <ul class="text-danger">Prix : 52.000 F CFA</ul>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-6">
-                                        <!-- Single course -->
-                                        <div class="single-course mb-70">
-                                            <div class="course-img">
-                                                <img src="assets/img/comment/vendre.jpg" alt="">
-                                            </div>
-                                            <div class="course-caption">
-                                                <div class="course-cap-top">
-                                                    <h4><a href="#">Web Development</a></h4>
-                                                </div>
-                                                <div class="course-cap-mid d-flex justify-content-between">
-                                                    <div class="course-ratting">
-                                                        <a href="#" class="genric-btn primary circle">En savoir plus</a>
-                                                    </div>
-                                                    <ul class="text-danger">Prix : 52.000 F CFA</ul>
-                                                </div>
-                                                {{-- <div class="course-cap-bottom d-flex justify-content-between">
-                                                    <ul>
-                                                        <li><i class="ti-user"></i> 562</li>
-                                                        <li><i class="ti-heart"></i> 562</li>
-                                                    </ul>
-                                                    <span>Free</span>
-                                                </div> --}}
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-6">
-                                        <!-- Single course -->
-                                        <div class="single-course mb-70">
-                                            <div class="course-img">
-                                                <img src="assets/img/comment/vendre.jpg" alt="">
-                                            </div>
-                                            <div class="course-caption">
-                                                <div class="course-cap-top">
-                                                    <h4><a href="#">Digital Marketing</a></h4>
-                                                </div>
-                                                <div class="course-cap-mid d-flex justify-content-between">
-                                                    <div class="course-ratting">
-                                                        <a href="#" class="genric-btn primary circle">En savoir plus</a>
-                                                    </div>
-                                                    <ul class="text-danger">Prix : 52.000 F CFA</ul>
-                                                </div>
-                                                {{-- <div class="course-cap-bottom d-flex justify-content-between">
-                                                    <ul>
-                                                        <li><i class="ti-user"></i> 562</li>
-                                                        <li><i class="ti-heart"></i> 562</li>
-                                                    </ul>
-                                                    <span>Free</span>
-                                                </div> --}}
-                                            </div>
-                                        </div>
-                                    </div>
+                                            
+                                        @endforeach
+
+                                    @else
+                                        
+                                    @endif
+
+                                
                                 </div>
                             </div>
                             <!--  Two -->

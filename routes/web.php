@@ -106,9 +106,7 @@ Route::get('conseil',function(){
 });
 
 //Formation
-Route::get('formation',function(){
-    return view('client.formation');
-});
+Route::get('formation','ClientController@liste_formation');
 
 //Coaching
 Route::get('coaching',function(){
@@ -143,20 +141,14 @@ Route::get('entreposage',function(){
 
 
 //Construction
-Route::get('construction',function(){
-    return view('client.construction');
-});
+Route::get('construction','ClientController@liste_construction');
 
 
 //Location
-Route::get('location',function(){
-    return view('client.location');
-});
+Route::get('location','ClientController@liste_location');
 
 //Vente
-Route::get('vente',function(){
-    return view('client.vente');
-});
+Route::get('vente','ClientController@liste_vente');
 
 
 //faire Gerer
@@ -169,6 +161,12 @@ Route::get('faire',function(){
 Route::get('agenda',function(){
     return view('client.a_propos');
 });
+
+//Organisation
+Route::get('organisation',function(){
+    return view('client.organisation');
+});
+
 
 //Contact
 Route::get('contact',function(){

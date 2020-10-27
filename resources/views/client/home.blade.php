@@ -277,7 +277,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="browse-btn2 text-center mt-50">
-                            <a href="courses.html" class="btn">Trouver nos formations</a>
+                            <a href="formation" class="btn">Trouver nos formations</a>
                         </div>
                     </div>
                 </div>

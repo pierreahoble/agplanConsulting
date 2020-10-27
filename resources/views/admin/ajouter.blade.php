@@ -46,7 +46,7 @@
                         <div class="row">
                             <div class="form-group col-md-12" id="colprix">
                                 <select name="type" class="form-control" required>
-                                    <option> Choisir un type *</option>
+                                    <option value=""> Choisir un type *</option>
                                     <option value="1">En vente </option>
                                     <option value="2">En Location</option>
                                     <option value="3">En Construction</option>

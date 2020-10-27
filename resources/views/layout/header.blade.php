@@ -96,22 +96,14 @@
                                                 <li><a href="faire">Faire Gérer</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="agenda">Organisation</a></li>
+                                        <li><a href="organisation">Organisation</a></li>
                                         <li><a href="agenda">Agenda</a></li>
                                         <li><a href="partenaire">Partenaires</a></li>
                                         <li><a href="contact">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
-                            <!-- Header-btn -->
-                            <!-- <div class="header-search d-none d-lg-block">
-                                <form action="#" class="form-box f-right ">
-                                    <input type="text" name="Search" placeholder="Rechercher un Cours">
-                                    <div class="search-icon">
-                                        <i class="fas fa-search special-tag"></i>
-                                    </div>
-                                </form>
-                            </div> -->
+                           
                         </div>
                         <!-- Mobile Menu -->
                         <div class="col-12">
