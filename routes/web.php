@@ -12,9 +12,21 @@
 */
 /**Administration ***/
 
+
+Route::get('home2',function(){
+    App\User::create([
+        'name'=>'Peter AHOBLE',
+        'email'=>'ahosipik@gmail.com',
+        'password'=>bcrypt('1234')
+    ]);
+
+    return 'fait';
+});
+
+
 Route::get('/', function () {
     return view('admin.home');
-});
+})->name('votre-backoffice');
 
 
 
@@ -70,9 +82,14 @@ Route::get('ajouter_un_element',function(){
     return view('admin.ajouter');
 });
 
+
+//Vue Login
 Route::get('login',function(){
     return view('admin.login');
 });
+
+Route::post('login','LoginController@connexion');
+
 
 
 
