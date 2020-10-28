@@ -31,11 +31,34 @@ class LoginController extends Controller
         if ($user) {
             // return 'rien';
             Session::flash('succes','Vous êtes connecté avec success');
-            return redirect('/');
+            return redirect('/accueil-admin');
         } else {
             Session::flash('error','Vous n\'êtes pas autorisé ...');
             return redirect()->back();
         }
 
     }
+
+
+
+    public function logout(){
+        $user=Auth::logout();
+        // return $user;
+        return  redirect('/');
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

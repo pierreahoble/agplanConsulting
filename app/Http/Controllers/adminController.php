@@ -12,6 +12,12 @@ class adminController extends Controller
 {
 
 
+
+    public function index(){
+
+        return view('admin.home');
+    }
+
    public function addFormation(REQUEST $request){
 
    

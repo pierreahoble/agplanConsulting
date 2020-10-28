@@ -24,63 +24,70 @@ Route::get('home2',function(){
 });
 
 
-Route::get('/', function () {
-    return view('admin.home');
-})->name('votre-backoffice');
+Route::group(['middleware' => 'App\Http\Middleware\AuthMiddleware'], function () {
+    
+    Route::get('/accueil-admin', 'adminController@index');
+    
+    Route::get('logout','LoginController@logout');
+    //Liste Formation
+    
+    Route::get('liste_des_formation','adminController@liste_formation');
+    
+    
+    //Vue formation
+    Route::get('ajouter_formation',function(){
+        return view('admin.add_artcle');
+    });
+    
+    //Ajouter une formation
+    Route::post('ajouter_formation','adminController@addFormation');
+    
+    //Update-Vue Formation
+    Route::get('{id}/modifier_formation','adminController@show');
+    
+    //Update- Formation
+    Route::post('modifier_formation','adminController@update');
+    
+    
+    
+    
+    //Enregistre element
+    
+    Route::post('ajouter_un_element','adminController@addBien');
+    
+    
+    Route::get('liste_des_vente','adminController@liste_vente');
+    
+    
+    Route::get('liste_des_construction','adminController@liste_construction');
+    
+    
+    Route::get('liste_des_location','adminController@liste_location');
+    
+    
+    //Upate Vue Bien
+    
+    Route::get('{id}/modifier_bien','adminController@show_bien');
+    
+    //Valider update
+    
+    Route::post('modifier_bien','adminController@update_bien');
+    
+    
+    
+    
+    
+    Route::get('ajouter_un_element',function(){
+        return view('admin.ajouter');
+    });
+}); 
 
 
 
-//Liste Formation
-
-Route::get('liste_des_formation','adminController@liste_formation');
-
-
-//Vue formation
-Route::get('ajouter_formation',function(){
-    return view('admin.add_artcle');
-});
-
-//Ajouter une formation
-Route::post('ajouter_formation','adminController@addFormation');
-
-//Update-Vue Formation
-Route::get('{id}/modifier_formation','adminController@show');
-
-//Update- Formation
-Route::post('modifier_formation','adminController@update');
 
 
 
 
-//Enregistre element
-
-Route::post('ajouter_un_element','adminController@addBien');
-
-
-Route::get('liste_des_vente','adminController@liste_vente');
-
-
-Route::get('liste_des_construction','adminController@liste_construction');
-
-
-Route::get('liste_des_location','adminController@liste_location');
-
-
-//Upate Vue Bien
-
-Route::get('{id}/modifier_bien','adminController@show_bien');
-
-//Valider update
-
-Route::post('modifier_bien','adminController@update_bien');
-
-
-
-
-
-Route::get('ajouter_un_element',function(){
-    return view('admin.ajouter');
-});
 
 
 //Vue Login
@@ -107,6 +114,10 @@ Route::post('login','LoginController@connexion');
 
 
 /**Client****/
+
+Route::get('/', function(){
+    return view('client.home');
+});
 
 Route::get('home', function(){
     return view('client.home');

@@ -35,7 +35,7 @@
         <div class="modal-body">Sélectionnez Déconnexion ci-dessous si vous êtes prêt à mettre fin à votre session en cours.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Annuler</button>
-          <a class="btn btn-primary" href="home">Déconnexion</a>
+          <a class="btn btn-primary" href="{{url('logout')}}">Déconnexion</a>
         </div>
       </div>
     </div>
