@@ -48,6 +48,30 @@ class LoginController extends Controller
     }
 
 
+    public function register(REQUEST $request)
+    {
+        $this->validate($request,[
+            'nom'=>['required'],
+            'email'=>['required','email'],
+            'prenom'=>['required'],
+            'tel'=>['required'],
+        ],[
+            'email'=>'Adresse email invalide',
+            'required'=>'Champ obligatoire'
+        ]);
+
+        //return $request;
+        User::create([
+            'name'=>request('nom'), 
+            'email'=>request('email'), 
+            'password'=>bcrypt(request('AGPLAN CONSULTING1234567890')),
+            'prenom'=>request('prenom'),
+            'telephone'=>request('tel')
+        ]);
+        return  redirect('home');;
+    }
+
+
 
 
 

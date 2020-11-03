@@ -254,3 +254,7 @@ Route::post('rechercher-vente','ClientController@rechercher_vente');
 //Route Vente
 Route::post('rechercher-formation','ClientController@rechercher_formation');
 
+
+//Register
+Route::post('register','LoginController@register');
+

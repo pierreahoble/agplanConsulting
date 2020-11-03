@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>AgPlan Consulting- Login</title>
+    <title>AG-PLAN Consulting- Register</title>
 
     <!-- Custom fonts for this template-->
     <link href="admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -51,24 +51,37 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Enrégistrez-Vous!</h1>
                                     </div>
-                                    <form class="user" action="" method="#">
+                                    <form class="user" action="register" method="post">
                                         @csrf
                                         <div class="form-group">
-                                            <input type="text" name="nom" class="form-control form-control-user" placeholder="Entrer votre Nom...">
+                                            <input type="text" name="nom" class="form-control form-control-user @error('nom') is-invalid @enderror" placeholder="Entrer votre Nom...">
                                         </div>
+                                        @error('nom')
+                                            <p class="text-danger">{{$errors->first('nom') }}</p>
+                                        @enderror
 
                                         <div class="form-group">
-                                            <input type="text" name="prenom" class="form-control form-control-user" placeholder="Entrer votre Prénom...">
+                                            <input type="text" name="prenom" class="form-control form-control-user @error('prenom') is-invalid @enderror" placeholder="Entrer votre Prénom...">
                                         </div>
+                                        @error('nom')
+                                            <p class="text-danger">{{$errors->first('prenom') }}</p>
+                                        @enderror
 
 
                                         <div class="form-group">
-                                            <input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Entrer votre email Adresse...">
+                                            <input type="email" name="email" class="form-control form-control-user @error('email') is-invalid @enderror " id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Entrer votre email Adresse...">
                                         </div>
+                                        @error('email')
+                                            <p class="text-danger">{{$errors->first('email') }}</p>
+                                        @enderror
 
                                         <div class="form-group">
-                                            <input type="tel" name="tel" class="form-control form-control-user"  placeholder="Entrer votre numéro de téléphone ...">
+                                            <input type="tel" name="tel" class="form-control form-control-user @error('tel') is-invalid @enderror"  placeholder="Entrer votre numéro de téléphone ...">
                                         </div>
+                                        @error('tel')
+                                            <p class="text-danger">{{$errors->first('tel') }}</p>
+                                        @enderror
+
 
                                       
                                         <button type="submit" class="btn btn-primary btn-user btn-block">S'enrégistré</button> 
