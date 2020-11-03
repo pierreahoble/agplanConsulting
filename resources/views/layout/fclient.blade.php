@@ -31,10 +31,10 @@
                                 </div>
                                 <!-- Footer Social -->
                                 <div class="footer-social">
-                                    <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.facebook.com/AGPlanConsulting/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                     <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                  </div>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
                         <div class="col-lg-12">
                             <div class="footer-copy-right text-center">
                                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous Droits Réservés | This template est conçu par <a href="#" target="_blank">ConnectPeople</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous Droits Réservés | AG-PLAN Consulting
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                             </div>
                         </div>

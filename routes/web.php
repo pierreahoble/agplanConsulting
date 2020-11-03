@@ -222,3 +222,35 @@ Route::get('douane',function(){
 Route::get('immobilier',function(){
     return view('client.immobilier');
 });
+
+
+//Details Immo 
+Route::get('details-bien-immobilier_{id}','ClientController@details_immobilier');
+
+
+//Details formatio
+Route::get('details-formation_{id}','ClientController@details_formation');
+
+//Register
+
+Route::get('register',function(){
+    return view('admin.register');
+});
+
+
+//Rechercher une construction
+Route::post('rechercher-construction','ClientController@rechercher_construction');
+
+
+//Rechercher une location
+Route::post('rechercher-location','ClientController@rechercher_location');
+
+
+//Route Vente
+Route::post('rechercher-vente','ClientController@rechercher_vente');
+
+
+
+//Route Vente
+Route::post('rechercher-formation','ClientController@rechercher_formation');
+

@@ -25,6 +25,26 @@
 
 @section('contenu')
 
+<br>
+<br>
+
+
+<div class="container">
+
+    <div class="header-search d-none d-lg-block">
+        <form action="rechercher-formation" class="form-box f-right " method="POST">
+            @csrf
+            <div class="row">
+                <div class="col-md-9">
+                    <input type="text" name="search" class="form-control" placeholder="Rechercher">
+                </div>
+                <div class="col-md-3">
+                    <button class=" genric-btn primary circle">Rechercher</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 
 
 
@@ -40,7 +60,7 @@
                             <!--Nav Button  -->                                            
                             <nav>                                                                             
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Tous nos formations</a>
+                                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Toutes nos formations</a>
                                 </div>
                             </nav>
                             <!--End Nav Button  -->
@@ -60,31 +80,47 @@
 
                                     @foreach ($formations as $formation)
                                         
-                                    <div class="col-xl-4 col-lg-4 col-md-6">
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-auto">
                                         <!-- Single course -->
+                                        
                                         <div class="single-course mb-70">
                                             <div class="course-img">
                                                 <img src="{{$formation->image}}" alt="">
                                             </div>
                                             <div class="course-caption">
                                                 <div class="course-cap-top">
-                                                    <h4><a href="#">{{$formation->tiitre}}</a></h4>
+                                                    <h6><a href="#">{{$formation->tiitre}}</a></h6>
                                                 </div>
+                                                <div class="row">
+                                                    {{-- <div class="col-xl-6 col-lg-6 col-md-6">
+                                                        <p>{{$bien->quartier}}</p>
+                                                    </div>
+                                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                                        <p class="text-danger"> {{$bien->prix}}F CFA</p>
+                                                    </div> --}}
+                                                </div>
+                                                
                                                 <div class="course-cap-mid d-flex justify-content-between">
                                                     <div class="course-ratting">
-                                                        <a href="#" class="genric-btn primary circle">En savoir plus</a>
+                                                        <a href="details-formation_{{$formation->id}}" class="genric-btn primary circle">En savoir plus</a>
                                                     </div>
-                                                    {{-- <ul><li>52 Review</li></ul> --}}
+
                                                 </div>
-                                                {{-- <div class="course-cap-bottom d-flex justify-content-between">
-                                                    <ul>
-                                                        <li><i class="ti-user"></i> 562</li>
-                                                        <li><i class="ti-heart"></i> 562</li>
-                                                    </ul>
-                                                    <span>Free</span>
-                                                </div> --}}
+
                                             </div>
                                         </div>
+
+
+                                        {{-- <div class="card" style="width: 18rem;">
+                                            <img class="card-img-top" src="{{$bien->image}}" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                <a href="#" class="genric-btn primary circle">En savoir plus</a>
+                                            </div>
+                                        </div> --}}
+
+
                                     </div>
                                     @endforeach
                                         

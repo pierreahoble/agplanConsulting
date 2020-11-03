@@ -24,6 +24,23 @@
 @section('contenu')
 
 
+
+<div class="container">
+    <div class="col-md-3">
+
+    </div>
+
+<div class="col-md-6">
+    <img src="assets/img/logo/asso.jpeg" alt="" style="">
+</div>
+
+<div class="col-md-3">
+        
+</div>
+
+</div>
+
+
  <!-- About Details Start -->
  <div class="about-details section-padding30">
             <div class="container">

@@ -2858,6 +2858,14 @@ hr {
     background-size: cover
 }
 
+.slider-height02 {
+    background-image: url(../img/hero/hero2.png);
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover
+}
+
 .slider-heights {
     background-image: url(../img/hero/h1_hero2.png);
     min-height: 840px;

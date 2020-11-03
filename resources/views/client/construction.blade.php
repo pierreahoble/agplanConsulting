@@ -24,6 +24,26 @@
 
 
 @section('contenu')
+<br>
+<br>
+
+
+<div class="container">
+
+    <div class="header-search d-none d-lg-block">
+        <form action="rechercher-construction" class="form-box f-right " method="POST">
+            @csrf
+            <div class="row">
+                <div class="col-md-9">
+                    <input type="text" name="search" class="form-control" placeholder="Rechercher">
+                </div>
+                <div class="col-md-3">
+                    <button class=" genric-btn primary circle">Rechercher</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 
 <!-- all-course Start -->
 <section class="all-course section-padding30">
@@ -55,32 +75,46 @@
                                     
                                     @if (count($biens)>0)
                                          @foreach ($biens as $bien)
-                                    
-                                            <div class="col-xl-4 col-lg-4 col-md-6">
-                                                                            <!-- Single course -->
-                                                <div class="single-course mb-70">
-                                                    <div class="course-img">
-                                                      <img src="{{$bien->image}}" alt="">
+                                         <div class="col-xl-3 col-lg-3 col-md-3 col-auto">
+                                            <!-- Single course -->
+                                            
+                                            <div class="single-course mb-70">
+                                                <div class="course-img">
+                                                    <img src="{{$bien->image}}" alt="">
+                                                </div>
+                                                <div class="course-caption">
+                                                    <div class="course-cap-top">
+                                                        <h6><a href="#">{{$bien->nom}}</a></h6>
                                                     </div>
-                                                    <div class="course-caption">
-                                                        <div class="course-cap-top">
-                                                            <h4><a href="#">{{$bien->nom}}</a></h4>
+                                                    <div class="row">
+                                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                                            <p>{{$bien->quartier}}</p>
                                                         </div>
-                                                        <div class="course-cap-mid d-flex justify-content-between">
-                                                            <div class="course-ratting">
-                                                                <a href="#" class="genric-btn primary circle">En savoir plus</a>
+                                                        <div class="col-xl-12 col-lg-12 col-md-12">
+                                                            <p class="text-danger"> {{$bien->prix}}F CFA</p>
                                                         </div>
-                                                            <ul class="text-danger">Prix :{{$bien->prix}}FCFA</ul>
                                                     </div>
-                                                                                    
+                                                    
+                                                    <div class="course-cap-mid d-flex justify-content-between">
+                                                        <div class="course-ratting">
+                                                            <a href="details-bien-immobilier_{{$bien->id}}" class="genric-btn primary circle">En savoir plus</a>
+                                                        </div>
+    
+                                                    </div>
+    
                                                 </div>
                                             </div>
-                                    </div>
+    
+    
                                             
+    
+                                        </div> 
                                         @endforeach
 
                                     @else
-                                        
+                                        <div class="container">
+                                            <h2 class="text-center">Aucun résultat trouvé</h2>
+                                        </div>
                                     @endif
 
                                 

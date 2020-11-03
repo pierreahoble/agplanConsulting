@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> Education | Template </title>
+    <title> AG-PLAN Consulting </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -53,7 +53,7 @@
                             <div class="col-xl-6 col-lg-7 col-md-8">
                                 <div class="hero__caption">
                                     {{-- <span data-animation="fadeInLeft" data-delay=".2s">Cours en ligne </span> --}}
-                                    <h1 data-animation="fadeInLeft" data-delay=".4s">AgPlan Consulting</h1>
+                                    <h1 data-animation="fadeInLeft" data-delay=".4s">AG-PLAN Consulting</h1>
                                     <!-- Hero-btn -->
                                     {{-- <div class="hero__btn">
                                         <a href="industries.html" class="btn hero-btn"  data-animation="fadeInLeft" data-delay=".8s">Get Started</a>
@@ -75,7 +75,7 @@
                             <div class="col-xl-6 col-lg-7 col-md-8">
                                 <div class="hero__caption">
                                     {{-- <span data-animation="fadeInLeft" data-delay=".2s">Formation en ligne</span> --}}
-                                    <h1 data-animation="fadeInLeft" data-delay=".4s">AgPlan consulting </h1>
+                                    <h1 data-animation="fadeInLeft" data-delay=".4s">AG-PLAN Consulting </h1>
                                     <!-- Hero-btn -->
                                     {{-- <div class="hero__btn">
                                         <a href="industries.html" class="btn hero-btn"  data-animation="fadeInLeft" data-delay=".8s">Commencer</a>
@@ -103,7 +103,7 @@
                         <!-- Section Tittle -->
                         <div class="section-tittle text-center mb-70">
                             {{-- <span>AgPlan Consulting </span> --}}
-                            <h2>AgPlan Consulting </h2>
+                            <h2>AG-PLAN Consulting </h2>
                         </div> 
                     </div>
                 </div>
@@ -157,7 +157,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="browse-btn2 text-center mt-50">
-                            <a href="#" class="btn">Trouver nos formations</a>
+                            <a href="formation" class="btn">Trouver nos formations</a>
                         </div>
                     </div>
                 </div>
