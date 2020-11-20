@@ -52,6 +52,7 @@
                                     <option value="1">En vente </option>
                                     <option value="2">En Location</option>
                                     <option value="3">En Construction</option>
+                                    <option value="4">Agenda</option>
                                 </select>
                             </div>
                             
@@ -59,6 +60,7 @@
                     </div>
 
 
+                    @if ($bien->type!=4)
 
 
                     <div class="col-md-6">
@@ -73,6 +75,8 @@
                             </div>
                         </div>
                      </div>
+                        
+
 
                      <div class="col-md-6">
                         <label class="text-primary h5">Quartier</label>
@@ -86,6 +90,11 @@
                             </div>
                         </div>
                      </div>
+                   
+                        
+                    @endif
+
+                  
 
 
                     <div class="col-md-12">

@@ -4,15 +4,13 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class bien extends Model
+class information extends Model
 {
-    protected $fillable=[
-        'nom',
+    
+    protected $fillable =[
+        'titre',
         'type',
-        'prix',
-        'quartier',
         'description',
-        'date',
         'image'
     ];
 }

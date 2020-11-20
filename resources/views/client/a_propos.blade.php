@@ -24,28 +24,97 @@
 @section('contenu')
 
 
- <!-- About Details Start -->
- <div class="about-details section-padding30">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="about-details-cap mb-50">
-                            <h4>Our Mission</h4>
-                            <p>Consectetur adipiscing elit, sued do eiusmod tempor ididunt udfgt labore et dolore magna aliqua. Quis ipsum suspendisces gravida. Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan lacus. Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan lacus.
-                            </p>
-                            <p> Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan lacus. Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan.</p>
+<!-- all-course Start -->
+<section class="all-course section-padding30">
+    <div class="container">
+        <div class="row">
+            <div class="all-course-wrapper">
+                <!-- Heading & Nav Button -->
+                <div class="row mb-15">
+                    <div class="col-lg-12">
+                        <div class="properties__button mb-90">
+                            <!--Nav Button  -->
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Tous nos biens à louer</a>
+                                </div>
+                            </nav>
+                            <!--End Nav Button  -->
                         </div>
+                    </div>
+                   
+                </div>
+                <!-- Tab content -->
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Nav Card -->
+                        <div class="tab-content" id="nav-tabContent">
+                            <!--  one -->
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <div class="row">
 
-                        <div class="about-details-cap mb-50">
-                            <h4>Our Vision</h4>
-                            <p>Consectetur adipiscing elit, sued do eiusmod tempor ididunt udfgt labore et dolore magna aliqua. Quis ipsum suspendisces gravida. Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan lacus. Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan lacus.
-                            </p>
+
+                                    @if (count($biens)>0) @foreach ($biens as $bien)
+
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-auto">
+                                        <!-- Single course -->
+                                        
+                                        <div class="single-course mb-70">
+                                            <div class="course-img">
+                                                <img src="{{$bien->image}}" alt="">
+                                            </div>
+                                            <div class="course-caption">
+                                                <div class="course-cap-top">
+                                                    <h6><a href="#">{{$bien->nom}}</a></h6>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                                        <p class="text-danger"> {{$bien->date}}</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="course-cap-mid d-flex justify-content-between">
+                                                    <div class="course-ratting">
+                                                        <a href="details-bien-immobilier_{{$bien->id}}" class="genric-btn primary circle">En savoir plus</a>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    @endforeach 
+                                    @else
+
+                                    <div class="container">
+                                        <h2>Auncun résultats trouvé</h2>
+                                    </div>
+                                    
+                                    @endif
+
+
+                                </div>
+                            </div>
+                            <!--  Two -->
+
                         </div>
+                        <!-- End Nav Card -->
                     </div>
                 </div>
             </div>
         </div>
-        <!-- About Details End -->
+    </div>
+</section>
+<!-- all-course End -->
+
+
       
+
+
+
+
+
 
 @endsection

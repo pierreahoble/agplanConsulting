@@ -53,7 +53,7 @@
             <div class="header-bottom header-sticky">
                 <!-- Logo -->
                 <div class="logo d-none d-lg-block">
-                    <a href="home"><img src="assets/img/logo/logos.png" alt="" ></a>
+                    <a href="home"><img src="assets/img/logo/logo_2020.png" alt="logo" style="width: 160px; height: 30px;"></a>
                 </div>
                 <div class="container-fluid" style="background-color: black">
                     <div class="menu-wrapper">
@@ -66,11 +66,11 @@
                             <nav>
                                 <ul id="navigation">
                                     <li><a href="home">Accueil</a></li>
-                                    <li><a href="entrepreneuriat">Entrepreneuriat</a>
+                                    <li><a href="entrepreneuriat">Formation - Service</a>
                                         <ul class="submenu">
                                             <li><a href="conseil">Conseil</a></li>
                                             <li><a href="etude">Etude</a></li>
-                                            <li><a href="formation">Formation</a></li>
+                                            <li><a href="formation">Entrepreneuriat</a></li>
                                             <li><a href="coaching">Coaching</a></li>
                                             <li><a href="audit">Audit</a></li>
                                         </ul>

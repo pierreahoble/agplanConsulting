@@ -42,6 +42,33 @@
       <a class="collapse-item" href="liste_des_vente">Liste Vente</a>
       <a class="collapse-item" href="liste_des_construction">Liste Construction</a>
       <a class="collapse-item" href="liste_des_location">Liste Location</a>
+      <a class="collapse-item" href="liste_agenda">Liste Agenda</a>
+    </div>
+  </div>
+</li>
+
+
+
+<li class="nav-item">
+  <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsepages" aria-expanded="true" aria-controls="collapsepages">
+    <i class="far fa-file-word"></i>
+    <span>Pages</span>
+  </a>
+  <div id="collapsepages" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+    <div class="bg-white py-2 collapse-inner rounded">
+      <h6 class="collapse-header">Modifier les pages</h6>
+      <a class="collapse-item" href="ajouter_une_page">Ajouter un element</a>
+      <a class="collapse-item" href="#">Etude</a>
+      <a class="collapse-item" href="#">Coaching</a>
+      <a class="collapse-item" href="#">Audit</a>
+      <a class="collapse-item" href="#">Consignation</a>
+      <a class="collapse-item" href="#">Transport</a>
+      <a class="collapse-item" href="#">Répresentation</a>
+      <a class="collapse-item" href="#">Entreposage</a>
+      <a class="collapse-item" href="#">Faire gérer</a>
+      <a class="collapse-item" href="#">Association</a>
+      <a class="collapse-item" href="#">Agenda</a>
+      <a class="collapse-item" href="#">Partenaires</a>
     </div>
   </div>
 </li>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use \App\Formation;
 use \App\Bien;
+use \App\Information;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Crypt;
@@ -99,6 +100,7 @@ class adminController extends Controller
         'prix'=>request('prix'),
         'quartier'=>request('quartier'),
         'description'=>request('description'),
+        'date'=>request('date'),
         'image'=>$vignette
     ]);
 
@@ -184,11 +186,58 @@ public function update_bien(REQUEST $request){
         return redirect('liste_des_vente');
     }elseif (request('type')==2){
         return redirect('liste_des_location');
-    }else{
+    }elseif (request('type')==4){
+        return redirect('liste_agenda');
+    }
+    else{
         return redirect('liste_des_construction');
     }
-   
+
+
+
+  
 }
+
+
+//Vue ajouter une page
+public function ajouter_page(){
+        return view('admin.page');
+}
+
+//Ajputer une page
+
+public function insert_page(REQUEST $request){
+
+    $vignette='';
+    $file=request('image');
+    $vignette= rand().$file->getClientOriginalName();
+    $file->move(public_path('image'),$vignette);
+    $vignette='image/'.$vignette;
+
+    Information::create([
+        'titre'=>request('titre'),
+        'type'=>request('type'),
+        'description'=>request('description'),
+        'image'=>$vignette
+    ]);
+
+    return redirect()->back();
+}
+
+
+
+//liste agenda
+public function liste_agenda(){
+    
+    $biens=Bien::where('type',4)->get();
+    return view('admin.liste_agenda',[
+        'biens'=>$biens
+    ]);
+}
+
+
+
+
 
 
 

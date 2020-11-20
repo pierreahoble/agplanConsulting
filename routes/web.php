@@ -75,13 +75,23 @@ Route::group(['middleware' => 'App\Http\Middleware\AuthMiddleware'], function ()
     
     
     
-    
-    
+    //Ajouter un element    
     Route::get('ajouter_un_element',function(){
         return view('admin.ajouter');
     });
-}); 
 
+    //Veu ajouter une page
+    Route::get('ajouter_une_page','adminController@ajouter_page');
+
+    //Ajouter une page
+    Route::post('ajouter_une_page','adminController@insert_page');
+
+    //Liste agenda
+    Route::get('liste_agenda','adminController@liste_agenda');
+
+
+}); 
+//================================Fin Middleware======================================\\
 
 
 
@@ -186,9 +196,7 @@ Route::get('faire',function(){
 
 
 //A Propos
-Route::get('agenda',function(){
-    return view('client.a_propos');
-});
+Route::get('agenda','ClientController@liste_agenda');
 
 //Organisation
 Route::get('organisation',function(){

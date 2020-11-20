@@ -123,6 +123,14 @@ public function rechercher_construction(REQUEST $request){
 
 
 
+        public function liste_agenda (){
+            $biens= Bien::where('type',4)->get();
+
+
+            return view('client.a_propos',[
+                'biens'=>$biens
+            ]);
+        }
 
 
 
