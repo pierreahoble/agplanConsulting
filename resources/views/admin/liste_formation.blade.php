@@ -27,7 +27,7 @@
             <p class="card-text">Prix: {{$formation->prix}}</p>
               {{-- <a href="#" class="btn btn-primary">Go somewhere</a> --}}
               <div class="col-md-12">
-                <a href="{{url(Crypt::encrypt($formation->id),'modifier_formation')}}" class="col-auto btn btn-primary  btn-circle btn-sm">
+                <a href="{{url("modifier_formation/{$formation->id}")}}" class="col-auto btn btn-primary  btn-circle btn-sm">
                     <i class="fas fa-edit"></i>
                 </a>
     

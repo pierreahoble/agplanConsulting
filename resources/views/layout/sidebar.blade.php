@@ -14,7 +14,7 @@
 
 <!-- Nav Item - Dashboard -->
 <li class="nav-item active">
-  <a class="nav-link" href="/">
+  <a class="nav-link" href="{{url('accueil-admin')}}">
     <i class="fas fa-fw fa-tachometer-alt"></i>
     <span>Tableau de bord</span></a>
 </li>
@@ -36,13 +36,13 @@
   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
     <div class="bg-white py-2 collapse-inner rounded">
       <h6 class="collapse-header">Action:</h6>
-      <a class="collapse-item" href="ajouter_un_element">Ajouter un élément</a>
-      <a class="collapse-item" href="ajouter_formation">Ajouter une formation</a>
-      <a class="collapse-item" href="liste_des_formation">Liste Formation</a>
-      <a class="collapse-item" href="liste_des_vente">Liste Vente</a>
-      <a class="collapse-item" href="liste_des_construction">Liste Construction</a>
-      <a class="collapse-item" href="liste_des_location">Liste Location</a>
-      <a class="collapse-item" href="liste_agenda">Liste Agenda</a>
+      <a class="collapse-item" href="{{url('ajouter_un_element')}}">Ajouter un élément</a>
+      <a class="collapse-item" href="{{url('ajouter_formation')}}">Ajouter une formation</a>
+      <a class="collapse-item" href="{{url('liste_des_formation')}}">Liste Formation</a>
+      <a class="collapse-item" href="{{url('liste_des_vente')}}">Liste Vente</a>
+      <a class="collapse-item" href="{{url('liste_des_construction')}}">Liste Construction</a>
+      <a class="collapse-item" href="{{url('liste_des_location')}}">Liste Location</a>
+      <a class="collapse-item" href="{{url('liste_agenda')}}">Liste Agenda</a>
     </div>
   </div>
 </li>
@@ -57,18 +57,19 @@
   <div id="collapsepages" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
     <div class="bg-white py-2 collapse-inner rounded">
       <h6 class="collapse-header">Modifier les pages</h6>
-      <a class="collapse-item" href="ajouter_une_page">Ajouter un element</a>
-      <a class="collapse-item" href="#">Etude</a>
-      <a class="collapse-item" href="#">Coaching</a>
-      <a class="collapse-item" href="#">Audit</a>
-      <a class="collapse-item" href="#">Consignation</a>
-      <a class="collapse-item" href="#">Transport</a>
-      <a class="collapse-item" href="#">Répresentation</a>
-      <a class="collapse-item" href="#">Entreposage</a>
-      <a class="collapse-item" href="#">Faire gérer</a>
-      <a class="collapse-item" href="#">Association</a>
-      <a class="collapse-item" href="#">Agenda</a>
-      <a class="collapse-item" href="#">Partenaires</a>
+      <a class="collapse-item" href="{{url('ajouter_une_page')}}">Ajouter un element</a>
+      <a class="collapse-item" href="{{url('modifier-une-page/1')}}">Liste de Conseil</a>
+      <a class="collapse-item" href="{{url('modifier-une-page/2')}}">Liste de Etude</a>
+      <a class="collapse-item" href="{{url('modifier-une-page/3')}}">Liste de Coaching</a>
+      <a class="collapse-item" href="{{url('modifier-une-page/4')}}">Liste de Audit</a>
+      <a class="collapse-item" href="{{url('modifier-une-page/5')}}">Liste de Consignation</a>
+      <a class="collapse-item" href="{{url('modifier-une-page/6')}}">Liste de Transport</a>
+      <a class="collapse-item" href="{{url('modifier-une-page/7')}}">Liste de Répresentation</a>
+      <a class="collapse-item" href="{{url('modifier-une-page/8')}}">Liste de Entreposage</a>
+      <a class="collapse-item" href="{{url('modifier-une-page/9')}}">Liste de Faire gérer</a>
+      <a class="collapse-item" href="{{url('modifier-une-page/10')}}">Liste de Association</a>
+      <a class="collapse-item" href="{{url('modifier-une-page/11')}}">Liste de Agenda</a>
+      <a class="collapse-item" href="{{url('modifier-une-page/12')}}">Liste de Partenaires</a>
     </div>
   </div>
 </li>

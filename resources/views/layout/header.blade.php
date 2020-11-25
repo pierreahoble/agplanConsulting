@@ -6,10 +6,13 @@
                 <!-- Left Social -->
                 <div class="header-left-social">
                     
-                    <ul class="header-social">
-                        <li><a href="https://www.facebook.com/AGPlanConsulting/" target="_blanc"><i class="fab fa-facebook-f"></i></a></li>
+                    <ul class="header-">
+                        <a href="{{url('/')}}">
+                            <img src="assets/img/logo/1.jpg" alt="logo" style="width: 150px; height: 100px;">
+                        </a>
+                        {{-- <li><a href="https://www.facebook.com/AGPlanConsulting/" target="_blanc"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#" target="_blanc"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#" target="_blanc"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#" target="_blanc"><i class="fab fa-linkedin-in"></i></a></li> --}}
                     </ul>
 
                 </div>
@@ -19,7 +22,8 @@
                             <div class="header-info-left">
                                 <ul>
                                     <li>agplanconsulting@gmail.com</li>
-                                    <li>05BP:321,Lycée Agoè-Est à 800m de l'Eglise Catholique d'Agoè-Nyivé (+228) 90 54 07 07 / 99 45 88 99</li>
+                                    <li>05BP:321,Lycée Agoè-Est à 800m de l'Eglise Catholique d'Agoè-Nyivé (+228) 90 69 96  66 / 90 54 07 07</li>
+                                    {{-- 99 45 88 99 --}}
                                 </ul>
                             </div>
                         </div>
@@ -30,15 +34,20 @@
 
             <div class="header-top d-none d-lg-block">
 
-                <div class="container">
+                <div class="container-fluid">
                     <div class="col-xl-12">
                         <div class="row d-flex justify-content-between align-items-center">
                             <div class="header-info-left">
 
                             </div>
+
                             <div class="header-info-right">
-                                <ul>
-                                    <li><a href="login" class="btn"><i class="ti-user"></i>Connexion</a></li>
+                                <ul style="float: right" >
+                                    @if (!Auth::check())
+                                    <li><a href="login" class="btn"><i class="ti-user"></i>Connexion</a></li>                                        
+                                    @else
+                                    <li><a href="{{url('accueil-admin')}}" class="btn"><i class="ti-user"></i>Administration</a></li>
+                                    @endif
                                     <li><a href="register" class="btn"><i class="ti-lock"></i>S'enregistrer</a></li>
                                 </ul>
                             </div>
@@ -52,9 +61,9 @@
 
             <div class="header-bottom header-sticky">
                 <!-- Logo -->
-                <div class="logo d-none d-lg-block">
-                    <a href="home"><img src="assets/img/logo/logo_2020.png" alt="logo" style="width: 160px; height: 30px;"></a>
-                </div>
+                {{-- <div class="logo d-none d-lg-block">
+                    <a href="home"><img src="assets/img/logo/1.jpg" alt="logo" style="width: 160px; height: 30px;"></a>
+                </div> --}}
                 <div class="container-fluid" style="background-color: black">
                     <div class="menu-wrapper">
                         <!-- Logo -->
@@ -68,7 +77,7 @@
                                     <li><a href="home">Accueil</a></li>
                                     <li><a href="entrepreneuriat">Formation - Service</a>
                                         <ul class="submenu">
-                                            <li><a href="conseil">Conseil</a></li>
+                                            <li><a href="{{url('conseil')}}">Conseil</a></li>
                                             <li><a href="etude">Etude</a></li>
                                             <li><a href="formation">Entrepreneuriat</a></li>
                                             <li><a href="coaching">Coaching</a></li>

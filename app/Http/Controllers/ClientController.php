@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Formation;
 use App\Bien;
+use App\Formation;
+use App\Information;
 use Illuminate\Http\Request;
 
 class ClientController extends Controller
@@ -131,6 +132,112 @@ public function rechercher_construction(REQUEST $request){
                 'biens'=>$biens
             ]);
         }
+
+
+
+    
+public function conseil_page()
+{
+    $informations=Information::where('type',1)->get();
+  
+    return view('client.conseil',[
+        'informations'=>$informations
+    ]);
+  
+    
+}
+
+
+
+public function etude_page()
+{
+
+    $informations=Information::where('type',2)->get();
+  
+    return view('client.etude',[
+        'informations'=>$informations
+    ]);
+
+}
+
+
+public function coaching_page()
+{
+
+    $informations=Information::where('type',3)->get();
+  
+    return view('client.coaching',[
+        'informations'=>$informations
+    ]);
+
+}
+
+public function audit_page()
+{
+
+    $informations=Information::where('type',4)->get();
+  
+    return view('client.audit',[
+        'informations'=>$informations
+    ]);
+
+
+}
+
+
+public function consignation_page()
+{
+    $informations=Information::where('type',5)->get();
+  
+    return view('client.consignation',[
+        'informations'=>$informations
+    ]);
+}
+
+
+public function transport_page()
+{
+    $informations=Information::where('type',6)->get();
+  
+    return view('client.transport',[
+        'informations'=>$informations
+    ]);
+}
+
+
+
+public function representation_page()
+{
+    $informations=Information::where('type',7)->get();
+  
+    return view('client.transport',[
+        'informations'=>$informations
+    ]);
+}
+
+
+public function entreposage_page()
+{
+    $informations=Information::where('type',8)->get();
+  
+    return view('client.entreposage',[
+        'informations'=>$informations
+    ]);
+}
+
+
+public function faire_vente()
+{
+    $informations=Information::where('type',9)->get();
+  
+    return view('client.faire',[
+        'informations'=>$informations
+    ]);
+
+}
+
+
+
 
 
 

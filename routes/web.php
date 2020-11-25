@@ -43,7 +43,7 @@ Route::group(['middleware' => 'App\Http\Middleware\AuthMiddleware'], function ()
     Route::post('ajouter_formation','adminController@addFormation');
     
     //Update-Vue Formation
-    Route::get('{id}/modifier_formation','adminController@show');
+    Route::get('modifier_formation/{id}','adminController@show')->name('modifier_formation');
     
     //Update- Formation
     Route::post('modifier_formation','adminController@update');
@@ -90,6 +90,16 @@ Route::group(['middleware' => 'App\Http\Middleware\AuthMiddleware'], function ()
     Route::get('liste_agenda','adminController@liste_agenda');
 
 
+    //Modifier un element de page
+    Route::get('modifier-une-page/{id}','adminController@show_page');
+    
+    //Valider les modification de la page
+    Route::post('modifier_une_page','adminController@update_page');
+
+    //Liste des elements d'une page
+    Route::get('liste-des-page_{id}','adminController@liste_page');
+
+
 }); 
 //================================Fin Middleware======================================\\
 
@@ -134,48 +144,32 @@ Route::get('home', function(){
 });
 
 //Etude
-Route::get('etude',function(){
-    return view('client.etude');
-});
+Route::get('etude','ClientController@etude_page');
 
 //Conseil
-Route::get('conseil',function(){
-    return view('client.conseil');
-});
+Route::get('conseil','ClientController@conseil_page');
 
 //Formation
 Route::get('formation','ClientController@liste_formation');
 
 //Coaching
-Route::get('coaching',function(){
-    return view('client.coaching');
-});
+Route::get('coaching','ClientController@coaching_page');
 
 //Audit
-Route::get('audit',function(){
-    return view('client.audit');
-});
+Route::get('audit','ClientController@audit_page');
 
 
 //Consignation
-Route::get('consignation',function(){
-    return view('client.consignation');
-});
+Route::get('consignation','ClientController@consignation_page');
 
 //Transport
-Route::get('transport',function(){
-    return view('client.transport');
-});
+Route::get('transport','ClientController@transport_page');
 
 //Representation
-Route::get('representation',function(){
-    return view('client.representation');
-});
+Route::get('representation','ClientController@representation_page');
 
 //entreposage
-Route::get('entreposage',function(){
-    return view('client.entreposage');
-});
+Route::get('entreposage','ClientController@entreposage_page');
 
 
 //Construction
@@ -190,10 +184,10 @@ Route::get('vente','ClientController@liste_vente');
 
 
 //faire Gerer
-Route::get('faire',function(){
-    return view('client.faire');
-});
+Route::get('faire','ClientController@faire_vente');
 
+//Partenaire
+Route::get('partenaire','ClientController@partenaire_vente');
 
 //A Propos
 Route::get('agenda','ClientController@liste_agenda');
@@ -210,10 +204,7 @@ Route::get('contact',function(){
 });
 
 
-//Partenaire
-Route::get('partenaire',function(){
-    return view('client.partenaire');
-});
+
 
 
 //Entrepreneuriat
@@ -230,6 +221,11 @@ Route::get('douane',function(){
 Route::get('immobilier',function(){
     return view('client.immobilier');
 });
+
+
+//Details de page
+
+Route::get('details_{id}','adminController@details_page');
 
 
 //Details Immo 

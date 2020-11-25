@@ -57,7 +57,7 @@ class adminController extends Controller
 
    public function show($id){
 
-    $id=Crypt::decrypt($id);
+    // $id=Crypt::decrypt($id);
     $formation=Formation::findorfail($id);
 
        return view('admin.update_formation',[
@@ -223,6 +223,97 @@ public function insert_page(REQUEST $request){
 
     return redirect()->back();
 }
+
+
+
+
+public function show_page($id)
+{
+
+    $information=Information::findorFail($id);
+    return view('admin.update_page',[
+        'information'=>$information
+    ]);
+}
+
+
+
+public function update_page(REQUEST $request){
+
+    $vignette='';
+    $file=request('image');
+    $vignette= rand().$file->getClientOriginalName();
+    $file->move(public_path('image'),$vignette);
+    $vignette='image/'.$vignette;
+
+    information::find(request('id'))->update([
+        'titre'=>request('titre'),
+        'description'=>request('description'),
+        'image'=>$vignette,
+    ]);
+
+
+    Session::flash('succes','Element modifié avec succes.');
+    return redirect('accueil-admin');
+}
+
+
+
+public function details_page($id)
+{
+
+    $information=Information::findOrFail($id);
+    return view('client.details_page',[
+        'information'=>$information,
+        'formation'=>'null', 
+    ]);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//Liste les elements sur la page
+
+public function liste_page($id)
+{
+    $information=Information::where('type',$id)->get();
+    if ($id==1) {
+        return view('client.conseil');
+    } else {
+        # code...
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
