@@ -6,26 +6,28 @@
 
   <!-- Page Heading -->
   <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">Liste des biens en vente</h1>
+    <h1 class="h3 mb-0 text-gray-800">Liste des Locations</h1>
   </div>
 
+  <!-- Content Row -->
 
+  
   <div class="row">
 
-    @if (count($biens)>0)
+    @if (count($informations)>0)
 
-    @foreach ($biens as $bien)
+    @foreach ($informations as $information)
     
     
           <div class="col-auto" style="padding-top: 15px;">
             <div class="card" style="width: 15rem;" style="padding-top: 15px;">
-                <img class="card-img-top" src="{{$bien->image}}" alt="Card image cap">
+                <img class="card-img-top" src="{{$information->image}}" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">{{$bien->nom}}</h5>
+                  <h5 class="card-title">{{$information->nom}}</h5>
                   {{-- <p class="card-text">Some quick exampl content.</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a> --}}
                   <div class="col-md-12">
-                    <a href="{{url($bien->id,'modifier_bien')}}" class="col-auto btn btn-primary  btn-circle btn-sm">
+                    <a href="{{url("modifier-une-page/$information->id")}}" class="col-auto btn btn-primary  btn-circle btn-sm">
                         <i class="fas fa-edit"></i>
                     </a>
         
@@ -56,6 +58,9 @@
 
     
   </div> 
+
+
+
 
 
  

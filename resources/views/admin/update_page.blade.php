@@ -86,7 +86,7 @@
 
                     <div class="form-group col-md-12">
                         <div class="custom-file">
-                            <input type="file"  id="file" class="custom-file-input" name="image" multiple>
+                            <input type="file"  id="file" class="custom-file-input" name="image">
                             <label class="custom-file-label" for="customFile">Choisire une image</label>
                         </div>
                     </div>

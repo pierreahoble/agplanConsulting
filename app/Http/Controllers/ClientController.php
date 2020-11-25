@@ -226,7 +226,7 @@ public function entreposage_page()
 }
 
 
-public function faire_vente()
+public function faire_page()
 {
     $informations=Information::where('type',9)->get();
   
@@ -235,6 +235,21 @@ public function faire_vente()
     ]);
 
 }
+
+
+
+public function partenaire_page()
+{
+    $informations=Information::where('type',11)->get();
+  
+    return view('client.faire',[
+        'informations'=>$informations
+    ]);  
+}
+
+
+
+
 
 
 

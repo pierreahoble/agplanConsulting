@@ -58,18 +58,18 @@
     <div class="bg-white py-2 collapse-inner rounded">
       <h6 class="collapse-header">Modifier les pages</h6>
       <a class="collapse-item" href="{{url('ajouter_une_page')}}">Ajouter un element</a>
-      <a class="collapse-item" href="{{url('modifier-une-page/1')}}">Liste de Conseil</a>
-      <a class="collapse-item" href="{{url('modifier-une-page/2')}}">Liste de Etude</a>
-      <a class="collapse-item" href="{{url('modifier-une-page/3')}}">Liste de Coaching</a>
-      <a class="collapse-item" href="{{url('modifier-une-page/4')}}">Liste de Audit</a>
-      <a class="collapse-item" href="{{url('modifier-une-page/5')}}">Liste de Consignation</a>
-      <a class="collapse-item" href="{{url('modifier-une-page/6')}}">Liste de Transport</a>
-      <a class="collapse-item" href="{{url('modifier-une-page/7')}}">Liste de Répresentation</a>
-      <a class="collapse-item" href="{{url('modifier-une-page/8')}}">Liste de Entreposage</a>
-      <a class="collapse-item" href="{{url('modifier-une-page/9')}}">Liste de Faire gérer</a>
-      <a class="collapse-item" href="{{url('modifier-une-page/10')}}">Liste de Association</a>
-      <a class="collapse-item" href="{{url('modifier-une-page/11')}}">Liste de Agenda</a>
-      <a class="collapse-item" href="{{url('modifier-une-page/12')}}">Liste de Partenaires</a>
+      <a class="collapse-item" href="{{url('liste_page_1')}}">Liste de Conseil</a>
+      <a class="collapse-item" href="{{url('liste_page_2')}}">Liste de Etude</a>
+      <a class="collapse-item" href="{{url('liste_page_3')}}">Liste de Coaching</a>
+      <a class="collapse-item" href="{{url('liste_page_4')}}">Liste de Audit</a>
+      <a class="collapse-item" href="{{url('liste_page_5')}}">Liste de Consignation</a>
+      <a class="collapse-item" href="{{url('liste_page_6')}}">Liste de Transport</a>
+      <a class="collapse-item" href="{{url('liste_page_7')}}">Liste de Répresentation</a>
+      <a class="collapse-item" href="{{url('liste_page_8')}}">Liste de Entreposage</a>
+      <a class="collapse-item" href="{{url('liste_page_8')}}">Liste de Faire gérer</a>
+      <a class="collapse-item" href="{{url('liste_page_10')}}">Liste de Association</a>
+      <a class="collapse-item" href="{{url('liste_page_11')}}">Liste de Agenda</a>
+      <a class="collapse-item" href="{{url('liste_page_22')}}">Liste de Partenaires</a>
     </div>
   </div>
 </li>

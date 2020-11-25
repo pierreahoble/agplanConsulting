@@ -241,16 +241,28 @@ public function show_page($id)
 public function update_page(REQUEST $request){
 
     $vignette='';
-    $file=request('image');
-    $vignette= rand().$file->getClientOriginalName();
-    $file->move(public_path('image'),$vignette);
-    $vignette='image/'.$vignette;
+    
 
-    information::find(request('id'))->update([
-        'titre'=>request('titre'),
-        'description'=>request('description'),
-        'image'=>$vignette,
-    ]);
+    if ($request->hasFile('image')) {
+        $file=request('image');
+        $vignette= rand().$file->getClientOriginalName();
+        $file->move(public_path('image'),$vignette);
+        $vignette='image/'.$vignette;
+        information::find(request('id'))->update([
+            'titre'=>request('titre'),
+            'description'=>request('description'),
+            'image'=>$vignette,
+        ]);
+        
+    } else {
+        information::find(request('id'))->update([
+            'titre'=>request('titre'),
+            'description'=>request('description'),
+            //'image'=>$vignette,
+        ]);
+    }
+    
+
 
 
     Session::flash('succes','Element modifié avec succes.');
@@ -285,12 +297,13 @@ public function details_page($id)
 
 public function liste_page($id)
 {
-    $information=Information::where('type',$id)->get();
-    if ($id==1) {
-        return view('client.conseil');
-    } else {
-        # code...
-    }
+   
+    $informations=Information::where('type',$id)->get();
+  
+        return view('admin.liste_page',[
+            'informations'=>$informations
+        ]);
+   
     
 }
 

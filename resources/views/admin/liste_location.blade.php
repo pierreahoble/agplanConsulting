@@ -31,9 +31,9 @@
                         <i class="fas fa-edit"></i>
                     </a>
         
-                    <a href="#" class="col-auto btn btn-info  btn-circle btn-sm">
+                    {{-- <a href="#" class="col-auto btn btn-info  btn-circle btn-sm">
                         <i class="fas fa-eye"></i>
-                    </a>
+                    </a> --}}
         
                     <a href="#" class="col-auto btn btn-danger btn-circle btn-sm">
                         <i class="fas fa-trash"></i>

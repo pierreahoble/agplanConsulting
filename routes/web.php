@@ -97,7 +97,10 @@ Route::group(['middleware' => 'App\Http\Middleware\AuthMiddleware'], function ()
     Route::post('modifier_une_page','adminController@update_page');
 
     //Liste des elements d'une page
-    Route::get('liste-des-page_{id}','adminController@liste_page');
+    Route::get('liste_page_{id}','adminController@liste_page');
+
+    //
+    //Route::get('liste-des-page_{id}','adminController@liste_page');
 
 
 }); 
@@ -184,10 +187,10 @@ Route::get('vente','ClientController@liste_vente');
 
 
 //faire Gerer
-Route::get('faire','ClientController@faire_vente');
+Route::get('faire','ClientController@faire_page');
 
 //Partenaire
-Route::get('partenaire','ClientController@partenaire_vente');
+Route::get('partenaire','ClientController@partenaire_page');
 
 //A Propos
 Route::get('agenda','ClientController@liste_agenda');
@@ -202,8 +205,6 @@ Route::get('organisation',function(){
 Route::get('contact',function(){
     return view('client.contact');
 });
-
-
 
 
 
