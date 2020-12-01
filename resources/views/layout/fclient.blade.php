@@ -32,8 +32,8 @@
                                 <!-- Footer Social -->
                                 <div class="footer-social">
                                     <a href="https://www.facebook.com/AGPlanConsulting/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://twitter.com/Agplanconsulti2" target="_blank"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/in/ag-plan-consulting-/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -152,4 +152,7 @@
     <!-- Jquery Plugins, main Jquery -->	
     <script src="{{asset('assets/js/plugins.js')}}"></script>
     <script src="{{asset('assets/js/main.js')}}"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fc653dec8c1c3c7"></script>
+
     

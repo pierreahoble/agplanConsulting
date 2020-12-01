@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="" lang="fr">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -62,7 +62,7 @@
                             </div>
                             <div class="col-xl-6 col-lg-5">
                                 <div class="hero-man d-none d-lg-block f-right" data-animation="jello" data-delay=".4s">
-                                    <img src="assets/img/hero/heroman.png" alt="">
+                                    {{-- <img src="assets/img/hero/heroman.png" alt=""> --}}
                                 </div>
                             </div>
                         </div>
@@ -84,7 +84,7 @@
                             </div>
                             <div class="col-xl-6 col-lg-5">
                                 <div class="hero-man d-none d-lg-block f-right" data-animation="jello" data-delay=".4s">
-                                    <img src="assets/img/hero/heroman.png" alt="">
+                                    {{-- <img src="assets/img/hero/heroman.png" alt=""> --}}
                                 </div>
                             </div>
                         </div>
@@ -539,4 +539,5 @@
  
 
     </body>
+    
 </html>
