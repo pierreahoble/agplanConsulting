@@ -2851,8 +2851,18 @@ hr {
 }
 
 .slider-height {
-    background-image: url(../img/hero/h1_hero.png);
-    min-height: 840px;
+    background-image: url(../img/hero/banniere.png);
+    min-height: 500px;
+    min-width: 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover
+}
+
+.slider-heights {
+    background-image: url(../img/hero/transi.png);
+    min-height: 500px;
+    min-width: 200px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover
@@ -2861,14 +2871,6 @@ hr {
 .slider-height02 {
     background-image: url(../img/hero/hero2.png);
     min-height: 300px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover
-}
-
-.slider-heights {
-    background-image: url(../img/hero/h1_hero2.png);
-    min-height: 840px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover
@@ -2911,7 +2913,7 @@ hr {
 
 .slider-height2entre {
     /* background-color: #1696e7; */
-    background-image: url(../img/hero/hero4.png);
+    background-image: url(../img/hero/entre.png);
     min-height: 455px;
     background-repeat: no-repeat;
     background-position: center;
@@ -2983,7 +2985,7 @@ hr {
 
 .slider-heighttransport {
     /* background-color: #1696e7; */
-    background-image: url(../img/hero/hero04.png);
+    background-image: url(../img/hero/hero4.png);
     min-height: 455px;
     background-repeat: no-repeat;
     background-position: center;
