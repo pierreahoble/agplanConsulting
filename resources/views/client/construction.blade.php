@@ -11,7 +11,7 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap hero-cap2 text-center">
-                                <h2>Construction</h2>
+                                <h2 style="color:  black">Construction</h2>
                             </div>
                         </div>
                     </div>

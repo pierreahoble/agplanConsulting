@@ -2922,7 +2922,16 @@ hr {
 
 .slider-height2immo {
     /* background-color: #1696e7; */
-    background-image: url(../img/hero/hero5.png);
+    background-image: url(../img/hero/immobilier.png);
+    min-height: 455px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
+.slider-heightOrga {
+    /* background-color: #1696e7; */
+    background-image: url(../img/logo/asso.jpeg);
     min-height: 455px;
     background-repeat: no-repeat;
     background-position: center;
@@ -2938,9 +2947,27 @@ hr {
     background-size: cover
 }
 
+.slider-heightaudit {
+    /* background-color: #1696e7; */
+    background-image: url(../img/hero/audit.png);
+    min-height: 455px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
+.slider-heightTransport {
+    /* background-color: #1696e7; */
+    background-image: url(../img/hero/Transport.png);
+    min-height: 455px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
 .slider-height2construction {
     /* background-color: #1696e7; */
-    background-image: url(../img/comment/cons.jpg);
+    background-image: url(../img/hero/Construction.png);
     min-height: 455px;
     background-repeat: no-repeat;
     background-position: center;
@@ -2976,7 +3003,7 @@ hr {
 
 .slider-heightlocation {
     /* background-color: #1696e7; */
-    background-image: url(../img/hero/hero02.png);
+    background-image: url(../img/hero/location.png);
     min-height: 455px;
     background-repeat: no-repeat;
     background-position: center;

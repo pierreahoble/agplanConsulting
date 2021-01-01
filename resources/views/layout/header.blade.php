@@ -77,8 +77,8 @@
                                     <li><a href="home">Accueil</a></li>
                                     <li><a href="entrepreneuriat">Formation - Service</a>
                                         <ul class="submenu">
-                                            <li><a href="{{url('conseil')}}">Conseil</a></li>
-                                            <li><a href="etude">Etude</a></li>
+                                            {{-- <li><a href="{{url('conseil')}}">Conseil</a></li> --}}
+                                            {{-- <li><a href="etude">Etude</a></li> --}}
                                             <li><a href="formation">Entrepreneuriat</a></li>
                                             <li><a href="coaching">Coaching</a></li>
                                             <li><a href="audit">Audit</a></li>
@@ -86,7 +86,7 @@
                                     </li>
                                     <li><a href="douane">Transit-Douane</a>
                                         <ul class="submenu">
-                                            <li><a href="consignation">Consignation</a></li>
+                                            {{-- <li><a href="consignation">Consignation</a></li> --}}
                                             <li><a href="transport">Transport</a></li>
                                             <li><a href="representation">Représentation</a></li>
                                             <li><a href="entreposage">Entreposage</a></li>
@@ -96,8 +96,8 @@
                                         <ul class="submenu">
                                             <li><a href="construction">Construction</a></li>
                                             <li><a href="location">Location</a></li>
-                                            <li><a href="vente">Vente</a></li>
-                                            <li><a href="faire">Faire Gérer</a></li>
+                                            {{-- <li><a href="vente">Vente</a></li>
+                                            <li><a href="faire">Faire Gérer</a></li> --}}
                                         </ul>
                                     </li>
                                     <li><a href="organisation">Association</a></li>

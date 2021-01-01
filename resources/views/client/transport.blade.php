@@ -5,12 +5,12 @@
 @section('baniere')
 	
         <div class="slider-area ">
-            <div class="slider-height2agenda d-flex align-items-center">
+            <div class="slider-heightTransport d-flex align-items-center">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap hero-cap2 text-center">
-                                <h2>Transport</h2>
+                                <h2 style="color: black">Transport</h2>
                             </div>
                         </div>
                     </div>
@@ -54,7 +54,7 @@
                             <!--Nav Button  -->                                            
                             <nav>                                                                             
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Tous nos Conseil</a>
+                                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Tous nos Transport</a>
                                 </div>
                             </nav>
                             <!--End Nav Button  -->
