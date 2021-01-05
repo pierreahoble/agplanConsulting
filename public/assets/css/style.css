@@ -2931,7 +2931,7 @@ hr {
 
 .slider-heightOrga {
     /* background-color: #1696e7; */
-    background-image: url(../img/logo/asso.jpeg);
+    background-image: url(../img/hero/association.jpg);
     min-height: 455px;
     background-repeat: no-repeat;
     background-position: center;
@@ -2941,6 +2941,24 @@ hr {
 .slider-height2agenda {
     /* background-color: #1696e7; */
     background-image: url(../img/hero/hero6.png);
+    min-height: 455px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
+.slider-heightconseil {
+    /* background-color: #1696e7; */
+    background-image: url(../img/hero/conseil.jpg);
+    min-height: 455px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
+.slider-heightetude {
+    /* background-color: #1696e7; */
+    background-image: url(../img/hero/etude.jpg);
     min-height: 455px;
     background-repeat: no-repeat;
     background-position: center;
@@ -2985,7 +3003,7 @@ hr {
 
 .slider-heightconta {
     /* background-color: #1696e7; */
-    background-image: url(../img/hero/hero8.png);
+    background-image: url(../img/hero/contact.jpg);
     min-height: 455px;
     background-repeat: no-repeat;
     background-position: center;
