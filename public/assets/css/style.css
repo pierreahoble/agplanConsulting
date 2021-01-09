@@ -3028,6 +3028,33 @@ hr {
     background-size: cover
 }
 
+.slider-heightconsignation {
+    /* background-color: #1696e7; */
+    background-image: url(../img/hero/consignation.png);
+    min-height: 455px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
+.slider-heightentreposage {
+    /* background-color: #1696e7; */
+    background-image: url(../img/hero/entreposage.png);
+    min-height: 455px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
+.slider-heightpartenaire {
+    /* background-color: #1696e7; */
+    background-image: url(../img/hero/partenaire.png);
+    min-height: 455px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
 .slider-heighttransport {
     /* background-color: #1696e7; */
     background-image: url(../img/hero/hero4.png);

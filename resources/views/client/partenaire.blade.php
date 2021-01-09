@@ -4,7 +4,7 @@
 @section('baniere')
 	
         <div class="slider-area ">
-            <div class="slider-height2part d-flex align-items-center">
+            <div class="slider-heightpartenaire d-flex align-items-center">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
