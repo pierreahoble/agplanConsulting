@@ -2947,6 +2947,15 @@ hr {
     background-size: cover
 }
 
+.slider-heightcoaching {
+    /* background-color: #1696e7; */
+    background-image: url(../img/hero/coaching.png);
+    min-height: 455px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
 .slider-heightconseil {
     /* background-color: #1696e7; */
     background-image: url(../img/hero/conseil.jpg);
