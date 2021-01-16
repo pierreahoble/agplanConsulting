@@ -72,7 +72,7 @@
                                     <ul>
                                         <li><a href="consignation">Consignation</a></li>
                                         <li><a href="transport">Transport</a></li>
-                                        <li><a href="representation">Représentation</a></li>
+                                        {{-- <li><a href="representation">Représentation</a></li> --}}
                                         <li><a href="entreposage">Entreposage</a></li>
                                     </ul>
                                 </div>
@@ -85,8 +85,8 @@
                                     <ul>
                                         <li><a href="construction">Construction</a></li>
                                         <li><a href="location">Location</a></li>
-                                        <li><a href="vente">Vente</a></li>
-                                        <li><a href="faire">Faire Gérer</a></li>
+                                        {{-- <li><a href="vente">Vente</a></li>
+                                        <li><a href="faire">Faire Gérer</a></li> --}}
                                     </ul>
                                 </div>
                             </div>

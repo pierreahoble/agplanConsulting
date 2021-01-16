@@ -96,7 +96,7 @@
                                         <ul class="submenu">
                                             <li><a href="construction">Construction</a></li>
                                             <li><a href="location">Location</a></li>
-                                            <li><a href="vente">Vente</a></li>
+                                            {{-- <li><a href="vente">Vente</a></li> --}}
                                             {{-- <li><a href="faire">Faire Gérer</a></li> --}}
                                         </ul>
                                     </li>
