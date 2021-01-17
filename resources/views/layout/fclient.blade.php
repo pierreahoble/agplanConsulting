@@ -45,8 +45,10 @@
                                 <div class="footer-tittle">
                                     <h4>A Propos</h4>
                                     <ul>
+                                        <li><a href="coaching">Coaching</a></li>
+                                        <li><a href="audit"> Audit</a></li>
                                         <li><a href="contact">Contact</a></li>
-                                        <li><a href="a_propos">A propos</a></li>
+                                      
                                     </ul>
                                 </div>
                             </div>
@@ -59,8 +61,7 @@
                                         <li><a href="conseil">Conseil </a></li>
                                         <li><a href="etude">Etude</a></li>
                                         <li><a href="formation">Formation</a></li>
-                                        <li><a href="coaching">Coaching</a></li>
-                                        <li><a href="audit"> Audit</a></li>
+                                      
                                     </ul>
                                 </div>
                             </div>

@@ -101,7 +101,7 @@
                                         </ul>
                                     </li>
                                     <li><a href="organisation">Association</a></li>
-                                    <li><a href="agenda">Agenda</a></li>
+                                    {{-- <li><a href="agenda">Agenda</a></li> --}}
                                     <li><a href="partenaire">Partenaires</a></li>
                                     <li><a href="contact">Contact</a></li>
                                 </ul>
