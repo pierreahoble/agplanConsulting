@@ -44,7 +44,7 @@
                             <div class="header-info-right">
                                 <ul style="float: right" >
                                     @if (!Auth::check())
-                                    <li><a href="login" class="btn"><i class="ti-user"></i>Connexion</a></li>                                        
+                                    {{-- <li><a href="login" class="btn"><i class="ti-user"></i>Connexion</a></li>                                         --}}
                                     @else
                                     <li><a href="{{url('accueil-admin')}}" class="btn"><i class="ti-user"></i>Administration</a></li>
                                     @endif
