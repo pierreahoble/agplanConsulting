@@ -64,7 +64,7 @@ class LoginController extends Controller
         User::create([
             'name'=>request('nom'), 
             'email'=>request('email'), 
-            'password'=>bcrypt(request('AGPLAN CONSULTING1234567890')),
+            'password'=>bcrypt(request('AGPLANCONSULTING1234567890')),
             'prenom'=>request('prenom'),
             'telephone'=>request('tel')
         ]);

@@ -242,7 +242,7 @@ public function partenaire_page()
 {
     $informations=Information::where('type',11)->get();
   
-    return view('client.faire',[
+    return view('client.partenaire',[
         'informations'=>$informations
     ]);  
 }
