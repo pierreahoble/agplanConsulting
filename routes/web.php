@@ -151,18 +151,6 @@ Route::post('login','LoginController@connexion');
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /**Client****/
 
 Route::get('/', function(){
