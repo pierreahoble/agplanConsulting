@@ -60,17 +60,17 @@
       <a class="collapse-item" href="{{url('liste_des_location')}}">Liste Location</a>
       {{-- <a class="collapse-item" href="{{url('liste_agenda')}}">Liste Agenda</a> --}}
       <a class="collapse-item" href="{{url('liste_page_1')}}">Liste de Conseil</a>
-      <a class="collapse-item" href="{{url('liste_page_2')}}">Liste de Etude</a>
-      <a class="collapse-item" href="{{url('liste_page_3')}}">Liste de Coaching</a>
-      <a class="collapse-item" href="{{url('liste_page_4')}}">Liste de Audit</a>
-      <a class="collapse-item" href="{{url('liste_page_5')}}">Liste de Consignation</a>
-      <a class="collapse-item" href="{{url('liste_page_6')}}">Liste de Transport</a>
+      <a class="collapse-item" href="{{url('liste_des_etudes')}}">Liste de Etude</a>
+      <a class="collapse-item" href="{{url('liste_des_coaching')}}">Liste de Coaching</a>
+      <a class="collapse-item" href="{{url('liste_des_audit')}}">Liste de Audit</a>
+      <a class="collapse-item" href="{{url('liste_des_consignation')}}">Liste de Consignation</a>
+      <a class="collapse-item" href="{{url('liste_des_transport')}}">Liste de Transport</a>
       {{-- <a class="collapse-item" href="{{url('liste_page_7')}}">Liste de Répresentation</a> --}}
-      <a class="collapse-item" href="{{url('liste_page_8')}}">Liste de Entreposage</a>
+      <a class="collapse-item" href="{{url('liste_des_entrepots')}}">Liste de Entreposage</a>
       {{-- <a class="collapse-item" href="{{url('liste_page_8')}}">Liste de Faire gérer</a> --}}
-      <a class="collapse-item" href="{{url('liste_page_10')}}">Liste de Association</a>
+      <a class="collapse-item" href="{{url('liste_des_association')}}">Liste de Association</a>
       {{-- <a class="collapse-item" href="{{url('liste_page_11')}}">Liste de Agenda</a> --}}
-      <a class="collapse-item" href="{{url('liste_page_22')}}">Liste de Partenaires</a>
+      <a class="collapse-item" href="{{url('liste_des_partenaire')}}">Liste de Partenaires</a>
     </div>
   </div>
 </li>

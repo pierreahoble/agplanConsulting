@@ -99,6 +99,33 @@ Route::group(['middleware' => 'App\Http\Middleware\AuthMiddleware'], function ()
     //Liste des elements d'une page
     Route::get('liste_page_{id}','adminController@liste_page');
 
+    //Liste des etudes
+    Route::get('liste_des_etudes','adminController@liste_etude');
+
+    //Liste des etudes
+    Route::get('liste_des_coaching','adminController@coaching');
+
+    //Liste des audit
+    Route::get('liste_des_audit','adminController@audit');
+
+    //Liste des consignation
+    Route::get('liste_des_consignation','adminController@consignation');
+
+    //Liste des transport
+    Route::get('liste_des_transport','adminController@transport');
+
+
+    //Liste des entreepo
+    Route::get('liste_des_entrepots','adminController@entrepot');
+
+
+    //Liste des association
+    Route::get('liste_des_association','adminController@association');
+
+    //Liste des association
+    Route::get('liste_des_partenaire','adminController@partenaire');
+
+
     //
     //Route::get('liste-des-page_{id}','adminController@liste_page');
 

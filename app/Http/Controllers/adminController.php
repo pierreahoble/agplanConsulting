@@ -299,13 +299,135 @@ public function liste_page($id)
 {
    
     $informations=Information::where('type',$id)->get();
+    // $informations=Information::where('type',$id)->first();
   
+    // return $informations;
         return view('admin.liste_page',[
             'informations'=>$informations
         ]);
    
     
 }
+
+
+
+public function liste_etude()
+{
+   
+    $informations=Information::where('type',2)->get();
+    // $informations=Information::where('type',$id)->first();
+  
+    // return $informations;
+        return view('admin.liste_etude',[
+            'informations'=>$informations
+        ]);
+   
+    
+}
+
+public function coaching()
+{
+   
+    $informations=Information::where('type',3)->get();
+    // $informations=Information::where('type',$id)->first();
+  
+    // return $informations;
+        return view('admin.liste_coaching',[
+            'informations'=>$informations
+        ]);
+   
+    
+}
+
+
+public function audit()
+{
+   
+    $informations=Information::where('type',4)->get();
+    // $informations=Information::where('type',$id)->first();
+  
+    // return $informations;
+        return view('admin.liste_coaching',[
+            'informations'=>$informations
+        ]);
+   
+    
+}
+
+
+public function consignation()
+{
+   
+    $informations=Information::where('type',5)->get();
+    // $informations=Information::where('type',$id)->first();
+  
+    // return $informations;
+        return view('admin.liste_consignation',[
+            'informations'=>$informations
+        ]);
+   
+    
+}
+
+
+public function transport()
+{
+
+    // entrepot
+   
+    $informations=Information::where('type',6)->get();
+    // $informations=Information::where('type',$id)->first();
+  
+    // return $informations;
+        return view('admin.liste_transport',[
+            'informations'=>$informations
+        ]);
+   
+    
+}
+
+
+public function entrepot()
+{
+
+    $informations=Information::where('type',8)->get();
+    // $informations=Information::where('type',$id)->first();
+  
+    // return $informations;
+        return view('admin.liste_entrepo',[
+            'informations'=>$informations
+        ]);
+}
+
+
+
+public function association()
+{
+
+    $informations=Information::where('type',10)->get();
+    // $informations=Information::where('type',$id)->first();
+  
+    // return $informations;
+        return view('admin.liste_entrepo',[
+            'informations'=>$informations
+        ]);
+}
+
+
+public function partenaire()
+{
+
+    $informations=Information::where('type',22)->get();
+    // $informations=Information::where('type',$id)->first();
+  
+    // return $informations;
+        return view('admin.liste_partenaire',[
+            'informations'=>$informations
+        ]);
+}
+
+
+
 
 
 

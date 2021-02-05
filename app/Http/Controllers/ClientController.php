@@ -155,7 +155,8 @@ public function etude_page()
     $informations=Information::where('type',2)->get();
   
     return view('client.etude',[
-        'informations'=>$informations
+        'informations'=>$informations,
+        'etude'=>'Etudes'
     ]);
 
 }
