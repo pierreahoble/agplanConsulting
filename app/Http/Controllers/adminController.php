@@ -408,7 +408,7 @@ public function association()
     // $informations=Information::where('type',$id)->first();
   
     // return $informations;
-        return view('admin.liste_entrepo',[
+        return view('admin.liste_asso',[
             'informations'=>$informations
         ]);
 }
