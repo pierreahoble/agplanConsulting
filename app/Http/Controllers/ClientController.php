@@ -138,7 +138,7 @@ public function rechercher_construction(REQUEST $request){
     
 public function conseil_page()
 {
-    $informations=Information::where('type',1)->get();
+ $informations=Information::where('type',1)->get();
   
     return view('client.conseil',[
         'informations'=>$informations

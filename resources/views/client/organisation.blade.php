@@ -68,7 +68,7 @@
                         <div class="about-details-cap mb-50">
                             <h4>Notre objectif</h4>
                             <p>
-                              <p>  • D’œuvrer à la fraternité et à une solidarité entre le filles et fils du pays.</p>
+                              <p>  • D’œuvrer à la fraternité et à une solidarité entre les filles et fils du pays.</p>
                               <p>  • De contribuer à la réconciliation de toutes les filles et tous les fils du pays .</p>
                               <p>  • De promouvoir la culture de la paix et de la non-violence.</p>
                               <p>  • De créer des conditions  d'acceptation des uns et des autres dans le respect des différences d'opinions.</p>
