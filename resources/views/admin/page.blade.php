@@ -11,7 +11,7 @@
 
 <!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">Ajouter des informations pour une page</h1>
+    <h1 class="h3 mb-0 text-gray-800">Ajouter des informations pour une élément</h1>
 </div>
 
 
@@ -28,11 +28,11 @@
                 <div class="row">
 
                     <div class="col-md-12">
-                        <label class="text-primary h5">Titre de la page</label>
+                        <label class="text-primary h5">Titre de l'élément</label>
                         <div class="row">
                             <div class="form-group col-md-12">
                                 <input type="text" id="" class="form-control" name="titre" required
-                                    value="" placeholder="Titre de la page">
+                                    value="" placeholder="Titre de l'élément">
                                 @if( $errors->has('titre'))
                                 <p class="text-danger">{{ $errors->first('titre') }}</p>
                                 @endif
@@ -42,11 +42,11 @@
 
 
                     <div class="col-md-12">
-                        <label class="text-primary h5">Type de page</label>
+                        <label class="text-primary h5">Type de l'élément</label>
                         <div class="row">
                             <div class="form-group col-md-12">
                                 <select name="type" class="form-control" required>
-                                    <option value="">Choisir la page</option>
+                                    <option value="">Choisir l'élément</option>
                                     <option value="1">Conseil</option>
                                     <option value="2">Etude</option>
                                     <option value="3">Coaching</option>
@@ -67,10 +67,10 @@
                      </div>
 
                     <div class="col-md-12">
-                        <label class="text-primary h5">Description de la page</label>
+                        <label class="text-primary h5">Description de l'élément</label>
                         <div class="row">
                             <div class="form-group col-md-12">
-                                <textarea name="description" id="" rows="2" class="form-control" placeholder="Description de la page" required></textarea>
+                                <textarea name="description" id="" rows="2" class="form-control" placeholder="Description de l'élément" required></textarea>
                                 @if( $errors->has('description'))
                                 <p class="text-danger">{{ $errors->first('description') }}</p>
                                 @endif
@@ -80,7 +80,7 @@
 
 
                     <div class="form-group col-md-12">
-                        <label for="" class="text-primary h5">Photos de la page </label>
+                        <label for="" class="text-primary h5">Photos de l'élément </label>
                     </div>
 
                     <div class="form-group col-md-12">

@@ -17,6 +17,8 @@ Route::get('home2',function(){
     App\User::create([
         'name'=>'Peter AHOBLE',
         'email'=>'ahosipik@gmail.com',
+        'prenom'=>'Moustafa',
+        'telephone'=>'99221284',
         'password'=>bcrypt('1234')
     ]);
 
@@ -241,7 +243,11 @@ Route::get('immobilier',function(){
 
 //Details de page
 
+Route::get('details-formation_{id}','FormationController@show');
+
 Route::get('details_{id}','adminController@details_page');
+
+Route::get('formationDetails{id}','adminController@details_page');
 
 
 //Details Immo 

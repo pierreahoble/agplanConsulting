@@ -220,7 +220,7 @@ public function insert_page(REQUEST $request){
         'description'=>request('description'),
         'image'=>$vignette
     ]);
-
+    Session::flash('succes','Element ajouté avec succes.');
     return redirect()->back();
 }
 

@@ -96,7 +96,7 @@
                                 {{-- <p class="text-danger"> {{$formation->prix}}F CFA</p> --}}
                             </div>
                             <ul>
-                                <a href="details_{{$formation->id}}" class="genric-btn primary circle">En savoir plus</a>
+                                <a href="details-formation_{{$formation->id}}" class="genric-btn primary circle">En savoir plus</a>
                             </ul>
                         </div>
                         {{-- <div class="course-cap-bottom d-flex justify-content-between">

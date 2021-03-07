@@ -36,9 +36,9 @@
   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
     <div class="bg-white py-2 collapse-inner rounded">
       <h6 class="collapse-header">Action:</h6>
-      <a class="collapse-item" href="{{url('ajouter_un_element')}}">Ajouter un élément</a>
+      <a class="collapse-item" href="{{url('ajouter_un_element')}}">Ajouter un bien</a>
       <a class="collapse-item" href="{{url('ajouter_formation')}}">Ajouter une formation</a>
-      <a class="collapse-item" href="{{url('ajouter_une_page')}}">Ajouter un element</a>
+      <a class="collapse-item" href="{{url('ajouter_une_page')}}">Ajouter un élément</a>
      
     </div>
   </div>
