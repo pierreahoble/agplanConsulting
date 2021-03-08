@@ -85,7 +85,7 @@
                 <!-- Single course -->
                 <div class="single-course mb-40">
                     <div class="course-img">
-                        <img src="{{$formation->image}}" alt="">
+                        <img src="{{asset($formation->image)}}" alt="">
                     </div>
                     <div class="course-caption">
                         <div class="course-cap-top">
