@@ -38,7 +38,7 @@
                                     <option value="1">En vente </option>
                                     <option value="2">En Location</option>
                                     <option value="3">En Construction</option>
-                                    <option value="4">Agenda</option>
+                                    {{-- <option value="4">Agenda</option> --}}
                                 </select>
                             </div>
 
@@ -78,7 +78,7 @@
 
 
 
-                    <div class="col-md-12" id="dateview">
+                    {{-- <div class="col-md-12" id="dateview">
                         <label class="text-primary h5">Date de l'évènement</label>
                         <div class="row">
                             <div class="form-group col-md-12">
@@ -87,7 +87,7 @@
                                 @endif
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
 
 
@@ -133,22 +133,23 @@
 @endsection @section('script')
 
 <script>
-    $(document).ready(function() {
-        $('#dateview').hide()
-        $("select").change(function() {
-            var va = ""
-            $("select option:selected").each(function() {
-                va += $(this).text()
-            })
-            if (va == "Agenda") {
-                $('#champ').hide()
-                $('#dateview').show()
-            } else {
-                $('#dateview').hide()
-                $('#champ').show()
-            }
-        })
-    });
+    // $(document).ready(function() {
+    //     $('#dateview').hide()
+    //     $("select").change(function() {
+    //         var va = ""
+    //         $("select option:selected").each(function() {
+    //             va += $(this).text()
+    //         })
+    //         if (va == "Agenda") {
+    //             $('#champ').hide()
+    //             $('#dateview').show()
+    //         } else {
+    //             $('#dateview').hide()
+    //             $('#dateview').removeAttr('required')
+    //             $('#champ').show()
+    //         }
+    //     })
+    // });
 </script>
 
 

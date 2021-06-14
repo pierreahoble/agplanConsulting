@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use \App\Formation;
 use \App\Bien;
+use App\Invite;
+use App\Formation;
 use \App\Information;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Crypt;
+use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Facades\Session;
 
 class adminController extends Controller
 {
@@ -16,7 +17,30 @@ class adminController extends Controller
 
     public function index(){
 
-        return view('admin.home');
+        $ip = Request::ip();
+        $ip_verifier = Invite::where('ip',$ip)->get();
+
+
+        if (count($ip_verifier)==0) {
+            Invite::create([
+                'ip' => $ip,
+                'invite' => 1
+            ]);
+        }
+
+
+        $user = Invite::count();
+        $formation = Formation::count();
+        $location = Bien::where('type', '=',2)->count();
+        $construction = Bien::where('type',3)->count();
+        $vente = Bien::where('type',1)->count();
+        return view('admin.home',[
+            'formation' => $formation,
+            'location' => $location,
+            'construction' => $construction,
+            'vente' => $vente,
+            'user' => $user,
+        ]);
     }
 
    public function addFormation(REQUEST $request){
