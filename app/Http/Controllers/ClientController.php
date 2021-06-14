@@ -3,13 +3,31 @@
 namespace App\Http\Controllers;
 
 use App\Bien;
+use App\Invite;
 use App\Formation;
 use App\Information;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Request;
 
 class ClientController extends Controller
 {
     
+
+    public function index(){
+        $ip = Request::ip();
+        $ip_verifier = Invite::where('ip',$ip)->get();
+
+
+        if (count($ip_verifier)==0) {
+            Invite::create([
+                'ip' => $ip,
+                'invite' => 1
+            ]);
+        }
+
+        return view('client.home');
+    }
+
+
    public function liste_formation(){
     $formations= Formation::all();
 

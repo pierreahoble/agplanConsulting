@@ -155,13 +155,9 @@ Route::post('login','LoginController@connexion');
 
 /**Client****/
 
-Route::get('/', function(){
-    return view('client.home');
-});
+Route::get('/', 'ClientController@index');
 
-Route::get('home', function(){
-    return view('client.home');
-});
+Route::get('home', 'ClientController@index');
 
 //Etude
 Route::get('etude','ClientController@etude_page');
